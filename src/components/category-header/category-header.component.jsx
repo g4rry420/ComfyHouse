@@ -1,10 +1,10 @@
 import React from 'react'
 import { withRouter } from "react-router-dom"
 
-import "./category.styles.css"
+import "./category-header.styles.css"
 import CategoryLinks from '../category-links/category-links.component'
 
-function Category({ location: {state} }) {
+function CategoryHeader({ location: {state} }) {
     return (
         <div className="container-fluid background-for-category py-4">
             <div className="container">
@@ -28,4 +28,4 @@ function Category({ location: {state} }) {
     )
 }
 
-export default withRouter(Category)
+export default withRouter(CategoryHeader)

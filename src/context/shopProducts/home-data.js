@@ -14,6 +14,7 @@ const shopByDepartment = [
                     {
                         id: 111,
                         title: "Sofas",
+                        routeName: "sofas",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/53731153/resize-h110-w110%5Ecompr-r85%5Etransparent/8140/81409053/default_name.png",
                         items: [
                             {
@@ -313,6 +314,7 @@ const shopByDepartment = [
                     {
                         id: 112,
                         title: "Sectionals",
+                        routeName: "sectionals",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/19678414/resize-h110-w110%5Ecompr-r85%5Etransparent/8140/81409056/default_name.png",
                         items: [
                             {
@@ -626,48 +628,56 @@ const shopByDepartment = [
                     {
                         id: 113,
                         title: "Loveseats",
+                        routeName: "loveseats",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/71285332/resize-h110-w110%5Ecompr-r85%5Etransparent/8140/81409069/default_name.png",
                         items: []
                     },
                     {
                         id: 114,
                         title: "Living Room Sets",
+                        routeName: "livingRoomSets",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/27182219/resize-h110-w110%5Ecompr-r85%5Etransparent/8140/81409037/default_name.png",
                         items: []
                     },
                     {
                         id: 115,
                         title: "Chairs & Recliners",
+                        routeName: "chairs&Recliners",
                         imageUrl: 'https://secure.img1-fg.wfcdn.com/im/19171847/resize-h110-w110%5Ecompr-r85%5Etransparent/3882/38820157/default_name.png',
                         items: []
                     },
                     {
                         id: 116,
                         title: "Accent Chairs",
+                        routeName: "accentChairs",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/13948771/resize-h110-w110%5Ecompr-r85%5Etransparent/9988/99885278/default_name.png",
                         items: []
                     },
                     {
                         id: 117,
                         title: "Coffee Tables",
+                        routeName: "coffeeTables",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/67744998/resize-h110-w110%5Ecompr-r85%5Etransparent/7295/72951825/default_name.png",
                         items: []
                     },
                     {
                         id: 118,
                         title: "Ottomans & Poufs",
+                        routeName: "ottomans&Poufs",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/19576459/resize-h110-w110%5Ecompr-r85%5Etransparent/2999/29997105/default_name.png",
                         items: []
                     },
                     {
                         id: 119,
                         title: "End & Side Tables",
+                        routeName: "end&SideTables",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/19281099/resize-h110-w110%5Ecompr-r85%5Etransparent/3854/38541926/default_name.png",
                         items: []
                     },
                     {
                         id: 120,
                         title: "Console & Sofa Tables",
+                        routeName: "console&SofaTables",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/50585187/resize-h110-w110%5Ecompr-r85%5Etransparent/3532/35329666/default_name.png",
                         items: []
                     }
@@ -676,47 +686,434 @@ const shopByDepartment = [
             {
                 id: 12,
                 title: "Bedroom Furniture",
-                items: []
+                items: [
+                    {
+                        id: 121,
+                        title: "Beds & Headboards",
+                        routeName: "beds&Headboars",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/89202144/resize-h110-w110%5Ecompr-r85%5Etransparent/1084/108437109/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 122,
+                        title: "Bedroom Sets",
+                        routeName: "bedroomSets",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/71160439/resize-h110-w110%5Ecompr-r85%5Etransparent/4866/48667733/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 123,
+                        title: "Dressers",
+                        routeName: "dressers",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/65284348/resize-h110-w110%5Ecompr-r85%5Etransparent/8006/80065699/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 124,
+                        title: "Nightstands",
+                        routeName: "nightstands",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/68279087/resize-h110-w110%5Ecompr-r85%5Etransparent/3613/36138915/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 125,
+                        title: "Daybeds",
+                        routeName: "daybeds",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/87962076/resize-h110-w110%5Ecompr-r85%5Etransparent/5477/54775049/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 126,
+                        title: "Mattresses",
+                        routeName: "mattresses",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/86266657/resize-h110-w110%5Ecompr-r85%5Etransparent/5286/52869855/default_name.png",
+                        items: []
+                    }
+                ]
             },
             {
                 id: 13,
                 title: "Kitchen & Dining Furniture",
-                items: []
+                items: [
+                    {
+                        id: 131,
+                        title: "Dining Tables & Seating",
+                        routeName: "diningTables&Seating",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/98962866/resize-h110-w110%5Ecompr-r85%5Etransparent/1674/16741408/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 132,
+                        title: "Bar Furniture",
+                        routeName: "barFurniture",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/93125115/resize-h110-w110%5Ecompr-r85%5Etransparent/1022/10226975/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 133,
+                        title: "Kitchen Islands & Carts",
+                        routeName: "kitchenIslands&Carts",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/79944351/resize-h110-w110%5Ecompr-r85%5Etransparent/1000/10009776/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 134,
+                        title: "Sideboards & Buffets",
+                        routeName: "sideboards&Buffets",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/85705309/resize-h110-w110%5Ecompr-r85%5Etransparent/1530/15307521/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 135,
+                        title: "Display & China Cabinets",
+                        routeName: "display&ChinaCabinets",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/57192837/resize-h110-w110%5Ecompr-r85%5Etransparent/8731/8731948/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 136,
+                        title: "Baker Racks",
+                        routeName: "bakerRacks",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/70383531/resize-h110-w110%5Ecompr-r85%5Etransparent/1384/13845937/default_name.png",
+                        items: []
+                    }
+                ]
             },
             {
                 id: 14,
                 title: "Accent Furniture",
-                items: []
+                items: [
+                    {
+                        id: 141,
+                        title: "Accent Chairs",
+                        routeName: "accentChairs",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/13948771/resize-h110-w110%5Ecompr-r85%5Etransparent/9988/99885278/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 142,
+                        title: "Accent Tables",
+                        routeName: "accentTables",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/70674211/resize-h110-w110%5Ecompr-r85%5Etransparent/4585/45850352/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 143,
+                        title: "Cabinets & Chests",
+                        routeName: "cabinets&Chests",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/67811311/resize-h110-w110%5Ecompr-r85%5Etransparent/3499/34991868/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 144,
+                        title: "Blankets Ladders & Racks",
+                        routeName: "blanketsLadders&Racks",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/88929025/resize-h110-w110%5Ecompr-r85%5Etransparent/3643/36436570/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 145,
+                        title: "Benches",
+                        routeName: "benches",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/80501673/resize-h110-w110%5Ecompr-r85%5Etransparent/4486/44862437/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 146,
+                        title: "Ottomons & Poufs",
+                        routeName: "ottomons&Poufs",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/19576459/resize-h110-w110%5Ecompr-r85%5Etransparent/2999/29997105/default_name.png",
+                        items: []
+                    }
+                ]
             },
             {
                 id: 15,
                 title: "Office Furniture",
-                items: []
+                items: [
+                    {
+                        id: 151,
+                        title: "Desks",
+                        routeName: "desks",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/39146905/resize-h110-w110%5Ecompr-r85%5Etransparent/3267/32671179/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 152,
+                        title: "Office Chairs & Seating",
+                        routeName: "officeChairs&Seating",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/67935120/resize-h110-w110%5Ecompr-r85%5Etransparent/1019/10198408/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 153,
+                        title: "Office Sets",
+                        routeName: "officeSets",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/92193961/resize-h110-w110%5Ecompr-r85%5Etransparent/3821/38219119/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 154,
+                        title: "Bookcases",
+                        routeName: "bookcases",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/57946603/resize-h110-w110%5Ecompr-r85%5Etransparent/4750/47500448/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 155,
+                        title: "Filling Cabinets",
+                        routeName: "fillingCabinets",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/28617184/resize-h110-w110%5Ecompr-r85%5Etransparent/6435/6435803/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 156,
+                        title: "Office Storage Cabinets",
+                        routeName: "officeStorageCabinets",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/62703610/resize-h110-w110%5Ecompr-r85%5Etransparent/4317/43177168/default_name.png",
+                        items: []
+                    }
+                ]
             },
             {
                 id: 16,
                 title: "Entry & Mudroom Furniture",
-                items: []
+                items: [
+                    {
+                        id: 161,
+                        title: "Console & Sofa Tables",
+                        routeName: "console&SofaTables",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/50585187/resize-h110-w110%5Ecompr-r85%5Etransparent/3532/35329666/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 162,
+                        title: "Cabinets & Chests",
+                        routeName: "cabinets&Chests",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/67811311/resize-h110-w110%5Ecompr-r85%5Etransparent/3499/34991868/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 163,
+                        title: "Hall Trees",
+                        routeName: "hallTrees",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/73514291/resize-h110-w110%5Ecompr-r85%5Etransparent/3348/33480428/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 164,
+                        title: "Storage Benches",
+                        routeName: "storageBenches",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/43159718/resize-h110-w110%5Ecompr-r85%5Etransparent/5637/56379049/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 165,
+                        title: "Entryway Benches",
+                        routeName: "entrywayBenches",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/00709381/resize-h110-w110%5Ecompr-r85/2647/26473347/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 166,
+                        title: "Shoe Storage",
+                        routeName: "shoeStorage",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/4548617/resize-h110-w110%5Ecompr-r85%5Etransparent/1532/15323752/default_name.png",
+                        items: []
+                    }
+                ]
             },
             {
                 id: 17,
                 title: "Outdoor & Patio Furniture",
-                items: []
+                items: [
+                    {
+                        id: 171,
+                        title: "Patio Furniture Sets",
+                        routeName: "patioFurnitureSets",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/08154195/resize-h110-w110%5Ecompr-r85%5Etransparent/2937/29372681/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 172,
+                        title: "Outdoor Seating & Patio Chairs",
+                        routeName: "outdoorSeating&PatioChairs",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/77103559/resize-h110-w110%5Ecompr-r85%5Etransparent/9503/95031620/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 173,
+                        title: "Patio Tables",
+                        routeName: "patioTables",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/47324948/resize-h110-w110%5Ecompr-r85%5Etransparent/1000/100007401/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 174,
+                        title: "Small Space Patio Furniture",
+                        routeName: "smallSpacePatioFurniture",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/48080216/resize-h110-w110%5Ecompr-r85%5Etransparent/7433/74339120/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 175,
+                        title: "Patio Bar Furniture",
+                        routeName: "patioBarFurniture",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/86230395/resize-h110-w110%5Ecompr-r85%5Etransparent/3324/33246851/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 176,
+                        title: "Outdoor Umbrellas",
+                        routeName: "outdoorUmbrellas",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/14360232/resize-h110-w110%5Ecompr-r85%5Etransparent/2792/27926506/default_name.png",
+                        items: []
+                    }
+                ]
             },
             {
                 id: 18,
                 title: "Bathroom Furniture",
-                items: []
+                items: [
+                    {
+                        id: 181,
+                        title: "Bathroom Vanities",
+                        routeName: "bathroomVanities",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/13859642/resize-h110-w110%5Ecompr-r85%5Etransparent/4216/42167764/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 182,
+                        title: "Bathroom Cabinets & Shelving",
+                        routeName: "bathroomCabinets&Shelving",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/82069439/resize-h110-w110%5Ecompr-r85%5Etransparent/1001/10011041/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 183,
+                        title: "Medicine Cabinets",
+                        routeName: "medicineCabinets",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/84213406/resize-h110-w110%5Ecompr-r85%5Etransparent/1250/12506777/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 184,
+                        title: "Small Space Bathroom",
+                        routeName: "smallSpaceBathroom",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/93521301/resize-h110-w110%5Ecompr-r85%5Etransparent/2668/26682178/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 185,
+                        title: "",
+                        routeName: "",
+                        imageUrl: "",
+                        items: []
+                    },
+                    {
+                        id: 186,
+                        title: "",
+                        routeName: "",
+                        imageUrl: "",
+                        items: []
+                    }
+                ]
             },
             {
                 id: 19,
                 title: "Baby & Kids Furniture",
-                items: []
+                items: [
+                    {
+                        id: 191,
+                        title: "Playroom",
+                        routeName: "playroom",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/62136436/resize-h110-w110%5Ecompr-r85%5Etransparent/6907/69072018/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 192,
+                        title: "Kids Bedroom Furniture",
+                        routeName: "kidsBedroomFurniture",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/96407395/resize-h110-w110%5Ecompr-r85%5Etransparent/4316/43165054/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 193,
+                        title: "Nursery Furniture",
+                        routeName: "nurseryFurniture",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/36392005/resize-h110-w110%5Ecompr-r85%5Etransparent/3111/31111993/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 194,
+                        title: "Baby & Toddler Play",
+                        routeName: "baby&ToddlerPlay",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/35831488/resize-h110-w110%5Ecompr-r85%5Etransparent/5313/53131370/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 195,
+                        title: "Teen Bedroom Furniture",
+                        routeName: "teenBedroomFurniture",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/94560442/resize-h110-w110%5Ecompr-r85%5Etransparent/2992/29921860/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 196,
+                        title: "Teen Lounge Furniture",
+                        routeName: "teenLoungeFurniture",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/33520057/resize-h110-w110%5Ecompr-r85%5Etransparent/6024/60247175/default_name.png",
+                        items: []
+                    },
+                ]
             },
             {
                 id: 20,
                 title: "Game Room Furniture",
-                items: []
+                items: [
+                    {
+                        id: 201,
+                        title: "Pool Tables & Accessories",
+                        routeName: "poolTables&Accessories",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/18133520/resize-h110-w110%5Ecompr-r85%5Etransparent/2979/29792235/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 202,
+                        title: "Poker Tables & Accessories",
+                        routeName: "pokerTables&Accessories",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/98551752/resize-h110-w110%5Ecompr-r85%5Etransparent/3112/31129717/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 203,
+                        title: "Shuffleboard",
+                        routeName: "shuffleboard",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/48616508/resize-h110-w110%5Ecompr-r85%5Etransparent/6665/6665853/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 204,
+                        title: "Table Tennis Tables & Accessories",
+                        routeName: "tableTennisTables&Accessories",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/98602412/resize-h110-w110%5Ecompr-r85%5Etransparent/3138/31384998/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 205,
+                        title: "Multi Game Tables",
+                        routeName: "multiGameTables",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/98146834/resize-h110-w110%5Ecompr-r85%5Etransparent/2982/29823719/default_name.png",
+                        items: []
+                    },
+                    {
+                        id: 206,
+                        title: "Classic Game Tables",
+                        routeName: "classicGameTables",
+                        imageUrl: "https://secure.img1-fg.wfcdn.com/im/96771142/resize-h110-w110%5Ecompr-r85%5Etransparent/5609/5609160/default_name.png",
+                        items: []
+                    },
+                ]
             }
         ]
     },
