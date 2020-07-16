@@ -5,6 +5,7 @@ const shopByDepartment = [
         routeName: "furniture",
         bigImageUrl: "https://secure.img1-fg.wfcdn.com/im/36125534/resize-h146-w146%5Ecompr-r85%5Etransparent/9847/98477101/default_name.png",
         smallImageUrl: "https://secure.img1-fg.wfcdn.com/im/75759767/timg-h40-w40%5Ecompr-r85%5Etransparent/9847/98477101/default_name.png",
+        mainImage: "https://secure.img1-fg.wfcdn.com/im/85067821/resize-h500-w500%5Ecompr-r85%5Etransparent/1148/114856311/default_name.png",
         items: [
             {
                 id: 11,

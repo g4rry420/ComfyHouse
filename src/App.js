@@ -3,16 +3,17 @@ import { Route, Switch } from "react-router-dom";
 
 import './App.css';
 import Homepage from './pages/homepage/homepage.component';
-import ShopProductsContextProvider from './context/shopProducts/shopProductsContext';
+import SubDepartment from "./components/sub-department/sub-department.component";
+import Header from './components/Header/header.component';
 
 function App() {
   return (
     <div className="App">
-      <ShopProductsContextProvider>
-        <Switch>
-          <Route exact path="/" component={Homepage} />
-        </Switch>
-      </ShopProductsContextProvider>
+      <Header/>
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+        <Route exact path="/:particularDepartment" component={SubDepartment} />
+      </Switch>
     </div>
   );
 }

@@ -4,13 +4,16 @@ import { BrowserRouter } from "react-router-dom"
 
 import './index.css';
 import App from './App';
+import ShopProductsContextProvider from './context/shopProducts/shopProductsContext';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <ShopProductsContextProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ShopProductsContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

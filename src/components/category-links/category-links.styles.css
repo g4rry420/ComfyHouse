@@ -1,0 +1,6 @@
+.in-page-links{
+    color: #615c65;
+}
+.in-page-links:hover {
+    color: var(--primaryColor);
+}

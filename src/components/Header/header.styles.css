@@ -1,0 +1,12 @@
+.links a {
+    color: black;
+    font-weight: 600;
+}
+.links a:hover {
+    color: var(--primaryColor);
+}
+.nav-list {
+    width: 35%;
+    list-style: none;
+    margin: 0 !important;
+}
