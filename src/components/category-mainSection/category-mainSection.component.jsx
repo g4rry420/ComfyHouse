@@ -22,7 +22,7 @@ function CategoryMainSection({ location: {state} }) {
                     </div>
                     <div className="col-md-10">
                         <div className="row">
-                        {state.items.map(item => item.items.filter((item, idx) => idx < 6).map((ite) => (
+                        {state.items.map(item => item.items.filter((item, idx) => idx < 6 ).map(ite => (
                                 
                                 <MainSectionItems key={ite.id} item={ite} />
                         )))} 

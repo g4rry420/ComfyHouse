@@ -1,6 +1,9 @@
 .in-page-links{
+    cursor: pointer;
     color: #615c65;
+    font-weight: 600;
 }
 .in-page-links:hover {
-    color: var(--primaryColor);
+    color: var(--primaryColor) !important;
+    text-decoration: underline !important;
 }

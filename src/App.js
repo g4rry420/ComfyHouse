@@ -11,8 +11,8 @@ function App() {
     <div className="App">
       <Header/>
       <Switch>
-        <Route exact path="/" component={Homepage} />
-        <Route exact path="/:particularDepartment" component={SubDepartment} />
+        <Route path="/:particularDepartment" component={SubDepartment} />
+        <Route path="/" component={Homepage} />
       </Switch>
     </div>
   );
