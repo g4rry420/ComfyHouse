@@ -1,0 +1,27 @@
+.individual-item-img-container img{
+    width: 100%;
+}
+.heading-in-individual-item{
+    font-weight: 600;
+    margin: 0 !important;
+    margin-top: 23% !important;
+}
+.individual-item-right-side-container h4{
+    color: #c4113f !important;
+    font-weight: 400;
+}
+.btn-cart{
+    background-color: var(--primaryColor);
+    /* padding: 13px 20px; */
+    color: var(--mainBlack);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: var(--mainTransition);
+    transform: translateX(101%);
+}
+.btn-cart div{
+    font-size: 23px;
+}
+.btn-cart:hover{
+    color: var(--light);
+}

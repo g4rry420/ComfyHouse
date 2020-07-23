@@ -4,7 +4,7 @@ import { withRouter } from "react-router-dom"
 import "./category-header.styles.css"
 import CategoryLinks from '../category-links/category-links.component'
 
-function CategoryHeader({ location: {state} }) {
+function CategoryHeader({ state }) {
     return (
         <div className="container-fluid background-for-category py-4">
             <div className="container">

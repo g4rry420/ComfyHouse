@@ -8,7 +8,7 @@ const ShopProductsContextProvider = (props) => {
     const [products, setProducts] = useState(shopByDepartment);
 
     return (
-        <ShopProductsContext.Provider value={{ products }}>
+        <ShopProductsContext.Provider value={{ products  }}>
             {props.children}
         </ShopProductsContext.Provider>
     )

@@ -5,7 +5,7 @@ import "./category-mainSection.styles.css"
 import MainSectionSideHeading from '../mainSection-side-Heading/mainSection-side-Heading.component'
 import MainSectionItems from '../mainSection-Items/mainSection-Items.component'
 
-function CategoryMainSection({ location: {state} }) {
+function CategoryMainSection({ state }) {
     return (
         <div>
             <div className="margin-in-mainSection my-5">
@@ -22,10 +22,11 @@ function CategoryMainSection({ location: {state} }) {
                     </div>
                     <div className="col-md-10">
                         <div className="row">
-                        {state.items.map(item => item.items.filter((item, idx) => idx < 6 ).map(ite => (
+                        {state.items.map(item => {
+                            return item.items.filter((item, idx) => idx < 6 ).map(ite => (
                                 
                                 <MainSectionItems key={ite.id} item={ite} />
-                        )))} 
+                        ))})} 
                         </div>
                     </div>
                 </div>

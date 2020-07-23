@@ -1,16 +1,16 @@
-import React from 'react'
+import React  from 'react'
+import { Route } from "react-router-dom"
 
 import "./items-preview-container.styles.css"
-import ItemsPreview from '../../components/items-preview/items-preview.component'
-import Heading from "../../components/Heading/heading.component"
+import ItemPreviewSubContainer from '../../components/items-preview-sub-container/items-preview-sub-container.component'
+import IndividualItemContainer from '../individual-item-container/individual-item-container.component'
 
-function ItemsPreviewContainer({ location: {state}}) {
+function ItemsPreviewContainer({ match }) {
+
     return (
         <div>
-            <Heading 
-                title={state.title} 
-                display="display-3" textCase="text-uppercase" h1="heading-in-items-preview-container" />
-            <ItemsPreview state={state} />
+            <Route exact path={`${match.path}`} component={ItemPreviewSubContainer} />
+            <Route path={`${match.path}/:id`} component={IndividualItemContainer} />    
         </div>
     )
 }
