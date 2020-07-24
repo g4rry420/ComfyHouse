@@ -6,7 +6,6 @@ import ItemPreviewSubContainer from '../../components/items-preview-sub-containe
 import IndividualItemContainer from '../individual-item-container/individual-item-container.component'
 
 function ItemsPreviewContainer({ match }) {
-
     return (
         <div>
             <Route exact path={`${match.path}`} component={ItemPreviewSubContainer} />

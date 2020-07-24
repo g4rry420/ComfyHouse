@@ -25,17 +25,52 @@ const shopByDepartment = [
                                 imageUrl: "https://secure.img1-fg.wfcdn.com/im/80898831/resize-h160-w160%5Ecompr-r85/9433/94334845/Corwin+Convertible+Sleeper.jpg",
                                 item: [
                                     {
+                                        smallImage: [
+                                            {
+                                                id: 11111,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/19800763/resize-h56-w56%5Ecompr-r50/9433/94334845/Corwin+Convertible+Sleeper.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/59637694/resize-h56-w56%5Ecompr-r50/9435/94357311/Corwin+Convertible+Sleeper.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/25218820/resize-h56-w56%5Ecompr-r50/9435/94357298/Corwin+Convertible+Sleeper.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/70832165/resize-h56-w56%5Ecompr-r50/9435/94357307/Corwin+Convertible+Sleeper.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/89686883/resize-h56-w56%5Ecompr-r50/9435/94357327/Corwin+Convertible+Sleeper.jpg",
+                                            }
+                                        ],
+                                        largeImage: [
+                                            {
+                                                id: 11111,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/95847441/resize-h800-w800%5Ecompr-r85/9433/94334845/Corwin+Convertible+Sleeper.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/19681398/resize-h800-w800%5Ecompr-r85/9435/94357311/Corwin+Convertible+Sleeper.jpg", 
+                                            },
+                                            {
+                                                id: 11113,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/90429384/resize-h800-w800%5Ecompr-r85/9435/94357298/Corwin+Convertible+Sleeper.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/08486927/resize-h800-w800%5Ecompr-r85/9435/94357307/Corwin+Convertible+Sleeper.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/89632209/resize-h800-w800%5Ecompr-r85/9435/94357327/Corwin+Convertible+Sleeper.jpg",
+                                            }
+                                        ],
                                         id: 11111,
-                                        smallImage1: "https://secure.img1-fg.wfcdn.com/im/19800763/resize-h56-w56%5Ecompr-r50/9433/94334845/Corwin+Convertible+Sleeper.jpg",
                                         largeImage1: "https://secure.img1-fg.wfcdn.com/im/95847441/resize-h800-w800%5Ecompr-r85/9433/94334845/Corwin+Convertible+Sleeper.jpg",
-                                        smallImage2: "https://secure.img1-fg.wfcdn.com/im/59637694/resize-h56-w56%5Ecompr-r50/9435/94357311/Corwin+Convertible+Sleeper.jpg",
-                                        largeImage2: "https://secure.img1-fg.wfcdn.com/im/19681398/resize-h800-w800%5Ecompr-r85/9435/94357311/Corwin+Convertible+Sleeper.jpg",
-                                        smallImage3: "https://secure.img1-fg.wfcdn.com/im/25218820/resize-h56-w56%5Ecompr-r50/9435/94357298/Corwin+Convertible+Sleeper.jpg",
-                                        largeImage3: "https://secure.img1-fg.wfcdn.com/im/90429384/resize-h800-w800%5Ecompr-r85/9435/94357298/Corwin+Convertible+Sleeper.jpg",
-                                        smallImage4: "https://secure.img1-fg.wfcdn.com/im/70832165/resize-h56-w56%5Ecompr-r50/9435/94357307/Corwin+Convertible+Sleeper.jpg",
-                                        largeImage4: "https://secure.img1-fg.wfcdn.com/im/08486927/resize-h800-w800%5Ecompr-r85/9435/94357307/Corwin+Convertible+Sleeper.jpg",
-                                        smallImage5: "https://secure.img1-fg.wfcdn.com/im/08486927/resize-h800-w800%5Ecompr-r85/9435/94357307/Corwin+Convertible+Sleeper.jpg",
-                                        largeImage5: "https://secure.img1-fg.wfcdn.com/im/89632209/resize-h800-w800%5Ecompr-r85/9435/94357327/Corwin+Convertible+Sleeper.jpg",
                                         description: "The Corwin pairs classic and modern in streamlined style. Featuring high density foam and sleek chrome metal legs and self-pipping tufting, this sofa effortlessly converts quickly to a bed. Surprise your guests and re-define comfort with the Corwin.",
                                         productDetails: [
                                             "Upholstery Material: 100% Polyester",
