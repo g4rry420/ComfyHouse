@@ -4,8 +4,8 @@ import "./individual-item.styles.css"
 import { ShopProductsContext } from "../../context/shopProducts/shopProductsContext"
 import Heading from "../Heading/heading.component"
 
+let countForArrow = 0;
 export default function IndividualItem({ match, location: {state} }) {
-
     const { products, dispatch } = useContext(ShopProductsContext)
     // const individualItem = 
     //     products.find(({routeName}) => routeName === match.params.particularDepartment)
@@ -33,18 +33,51 @@ export default function IndividualItem({ match, location: {state} }) {
         let checkImage = smallImageRef.current.filter(img => img.id === largeImageRef.current[0].id);
         checkImage[0].style.border = "2px solid #f09d51";
         checkImage[0].style.transform = "scale(1.2)";
+
+        countForArrow = parseInt(largeImage[0].id.toString().charAt(largeImage[0].id.toString().length - 1)) - 1;
         
     }, [largeImage])
-    
+
     const getLargeImage = (image) => {
-        let mainLargeImg = state.item[0].largeImage.filter(img => img.id === image.id);
-        if(!largeImage.map(largeImg => largeImg.id).includes(image.id)) {
+        let mainLargeImg = state.item[0].largeImage.find(img => img.id === image.id);
+        if(!largeImage.map(largeImg => largeImg.id).includes(image.id) && mainLargeImg !== undefined) {
             setLargeImage([{
-                id: mainLargeImg[0].id,
-                largeImage: mainLargeImg[0].largeImage
+                id: mainLargeImg.id,
+                largeImage: mainLargeImg.largeImage
             }])
         }
     }
+
+    const arrowImageLeft = () => {
+        if(countForArrow > 0){
+            let mainImage = state.item[0].largeImage[countForArrow-=1]
+
+            if(mainImage !== undefined){
+                setLargeImage([{
+                    id: mainImage.id,
+                    largeImage: mainImage.largeImage
+                }])
+            }  
+        }else{
+            console.log("arrowImageLeft else is running")
+        }
+    }
+
+    const arrowImageRight = () => {
+        if(countForArrow < state.item[0].largeImage.length - 1){
+            let mainImage = state.item[0].largeImage[countForArrow+=1]
+
+            if(mainImage !== undefined){
+                setLargeImage([{
+                    id: mainImage.id,
+                    largeImage: mainImage.largeImage
+                }])
+            }
+        }else{
+            console.log("arrowImageRight else is running")
+        }
+
+    } 
 
 
     return ( 
@@ -53,9 +86,21 @@ export default function IndividualItem({ match, location: {state} }) {
                 <div className="col-md-7">
                     <div className="individual-item-left-container">
                         <div className="individual-item-big-img-container text-center">
+                            <div onClick={arrowImageLeft} className="arrow-left-circle">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-caret-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd" d="M10 12.796L4.519 8 10 3.204v9.592zm-.659.753l-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                                </svg>
+                            </div>
+                            
                             {largeImage.map((img, i) => (
                                 <img ref={el => largeImageRef.current[i] = el} key={img.id} id={img.id} src={img.largeImage} alt="large product"/>
                             ))}
+
+                            <div onClick={arrowImageRight} className="arrow-right-circle">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-caret-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd" d="M6 12.796L11.481 8 6 3.204v9.592zm.659.753l5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                </svg>
+                            </div>
                         </div>
                         <div className="small-image-container">
                             {smallImage.map((img, i) => (

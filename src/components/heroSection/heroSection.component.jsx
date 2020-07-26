@@ -9,7 +9,7 @@ export default function HeroSection() {
         <section className="hero-section">
             <div className="container p-5 text-center background">
                 <Heading title="furniture collection" textCase="text-uppercase" display="display-2" h1="h1" />
-                <button type="button" className="btn btn-shop mt-5 text-uppercase">Shop Now</button>
+                <button type="button" className="btn btn-shop mt-5 text-uppercase"><a href="#shopNow">Shop Now </a> </button>
             </div>
         </section>
     )

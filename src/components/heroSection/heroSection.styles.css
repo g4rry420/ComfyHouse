@@ -20,9 +20,15 @@
 .btn:focus {
     box-shadow: none !important;
 }
-.btn-shop:hover{
+.btn-shop a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.btn-shop:hover , .btn-shop:hover > a{
     background-color: transparent;
-    color: var(--primaryColor);
+    color: var(--primaryColor) !important;
+    transition: var(--mainTransition);
 }
 .h1{
     font-weight: 600 !important;

@@ -90,17 +90,52 @@ const shopByDepartment = [
                                 imageUrl: "https://secure.img1-fg.wfcdn.com/im/53242697/resize-h160-w160%5Ecompr-r85/9927/99276238/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
                                 item: [
                                     {
-                                        id: 11112,
-                                        smallImage1: "https://secure.img1-fg.wfcdn.com/im/92144629/resize-h56-w56%5Ecompr-r50/9927/99276238/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
+                                        smallImage: [
+                                            {
+                                                id: 11111,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/92144629/resize-h56-w56%5Ecompr-r50/9927/99276238/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/12891818/resize-h56-w56%5Ecompr-r50/9953/99534759/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/57262573/resize-h56-w56%5Ecompr-r50/9927/99276229/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/59984361/resize-h56-w56%5Ecompr-r50/9953/99534736/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/00773754/resize-h56-w56%5Ecompr-r50/9953/99534744/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
+                                            }
+                                        ],
+                                        largeImage: [
+                                            {
+                                                id: 11111,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/23503575/resize-h800-w800%5Ecompr-r85/9927/99276238/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/66427274/resize-h800-w800%5Ecompr-r85/9953/99534759/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/22056519/resize-h800-w800%5Ecompr-r85/9927/99276229/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/75632565/resize-h800-w800%5Ecompr-r85/9953/99534736/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/85125550/resize-h800-w800%5Ecompr-r85/9953/99534744/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
+                                            }
+                                        ],
+                                        id: 11111,
                                         largeImage1: "https://secure.img1-fg.wfcdn.com/im/23503575/resize-h800-w800%5Ecompr-r85/9927/99276238/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
-                                        smallImage2: "https://secure.img1-fg.wfcdn.com/im/12891818/resize-h56-w56%5Ecompr-r50/9953/99534759/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
-                                        largeImage2: "https://secure.img1-fg.wfcdn.com/im/12891818/resize-h56-w56%5Ecompr-r50/9953/99534759/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
-                                        smallImage3: "https://secure.img1-fg.wfcdn.com/im/57262573/resize-h56-w56%5Ecompr-r50/9927/99276229/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
-                                        largeImage3: "https://secure.img1-fg.wfcdn.com/im/22056519/resize-h800-w800%5Ecompr-r85/9927/99276229/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
-                                        smallImage4: "https://secure.img1-fg.wfcdn.com/im/59984361/resize-h56-w56%5Ecompr-r50/9953/99534736/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
-                                        largeImage4: "https://secure.img1-fg.wfcdn.com/im/75632565/resize-h800-w800%5Ecompr-r85/9953/99534736/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
-                                        smallImage5: "https://secure.img1-fg.wfcdn.com/im/00773754/resize-h56-w56%5Ecompr-r50/9953/99534744/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
-                                        largeImage5: "https://secure.img1-fg.wfcdn.com/im/85125550/resize-h800-w800%5Ecompr-r85/9953/99534744/Nickles+Velvet+52.36%2522+Armless+Loveseat.jpg",
                                         description: "2-Seats armless loveseats or couches is a perfect place to spend a wonderful night. The soft waterproof polyester cover and the sturdy solid wooden frame provide great comfort and safety. The mid-century look makes your house more attractive. Add this perfect item to your lovely home, both to embellish your living room and create a warm atmosphere.",
                                         productDetails: [
                                             "Upholstery Material: Velvet",
@@ -119,17 +154,52 @@ const shopByDepartment = [
                                 imageUrl: "https://secure.img1-fg.wfcdn.com/im/66086890/resize-h160-w160%5Ecompr-r85/1083/108360870/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
                                 item: [
                                     {
-                                        id: 11113,
-                                        smallImage1: "https://secure.img1-fg.wfcdn.com/im/02789698/resize-h56-w56%5Ecompr-r50/1083/108360870/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
+                                        smallImage: [
+                                            {
+                                                id: 11111,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/02789698/resize-h56-w56%5Ecompr-r50/1083/108360870/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/12721207/resize-h56-w56%5Ecompr-r50/1083/108360877/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/24072120/resize-h56-w56%5Ecompr-r50/1083/108360876/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/03291523/resize-h56-w56%5Ecompr-r50/1083/108357846/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/35423033/resize-h56-w56%5Ecompr-r50/1083/108360875/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
+                                            }
+                                        ],
+                                        largeImage: [
+                                            {
+                                                id: 11111,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/46690826/resize-h800-w800%5Ecompr-r85/1083/108360870/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/67234435/resize-h800-w800%5Ecompr-r85/1083/108360877/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/78585348/resize-h800-w800%5Ecompr-r85/1083/108360876/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/46189001/resize-h800-w800%5Ecompr-r85/1083/108357846/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/89936261/resize-h800-w800%5Ecompr-r85/1083/108360875/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
+                                            }
+                                        ],
+                                        id: 11111,
                                         largeImage1: "https://secure.img1-fg.wfcdn.com/im/46690826/resize-h800-w800%5Ecompr-r85/1083/108360870/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
-                                        smallImage2: "https://secure.img1-fg.wfcdn.com/im/12721207/resize-h56-w56%5Ecompr-r50/1083/108360877/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
-                                        largeImage2: "https://secure.img1-fg.wfcdn.com/im/67234435/resize-h800-w800%5Ecompr-r85/1083/108360877/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
-                                        smallImage3: "https://secure.img1-fg.wfcdn.com/im/24072120/resize-h56-w56%5Ecompr-r50/1083/108360876/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
-                                        largeImage3: "https://secure.img1-fg.wfcdn.com/im/78585348/resize-h800-w800%5Ecompr-r85/1083/108360876/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
-                                        smallImage4: "https://secure.img1-fg.wfcdn.com/im/03291523/resize-h56-w56%5Ecompr-r50/1083/108357846/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
-                                        largeImage4: "https://secure.img1-fg.wfcdn.com/im/46189001/resize-h800-w800%5Ecompr-r85/1083/108357846/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
-                                        smallImage5: "https://secure.img1-fg.wfcdn.com/im/35423033/resize-h56-w56%5Ecompr-r50/1083/108360875/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
-                                        largeImage5: "https://secure.img1-fg.wfcdn.com/im/89936261/resize-h800-w800%5Ecompr-r85/1083/108360875/Lewellen+Velvet+71.6%2522+Square+Arm+Sofa.jpg",
                                         description: "Get a modern look that adds comfort and style to your home with the kent sofa set, European style with a sleek design will inspire a fresh look and bring comfort to your living space. Tapered legs and velvet fabric upholstery of this seating collection create a stylish look that embraces vintage flair and modern living. Complete your living room decor with these chic seating options.",
                                         productDetails: [
                                             "Upholstery Material: Velvet",
@@ -148,17 +218,52 @@ const shopByDepartment = [
                                 imageUrl: "https://secure.img1-fg.wfcdn.com/im/24368033/resize-h160-w160%5Ecompr-r85/8264/82649252/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
                                 item: [
                                     {
-                                        id: 11114,
-                                        smallImage1: "https://secure.img1-fg.wfcdn.com/im/31697331/resize-h56-w56%5Ecompr-r50/8264/82649252/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
+                                        smallImage: [
+                                            {
+                                                id: 11111,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/31697331/resize-h56-w56%5Ecompr-r50/8264/82649252/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/33064334/resize-h56-w56%5Ecompr-r50/8264/82649273/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/36183610/resize-h56-w56%5Ecompr-r50/8264/82649138/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/66770220/resize-h56-w56%5Ecompr-r50/8264/82649220/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/16689721/resize-h56-w56%5Ecompr-r50/8264/82649214/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
+                                            },
+                                        ],
+                                        largeImage: [
+                                            {
+                                                id: 11111,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/47621761/resize-h800-w800%5Ecompr-r85/8264/82649252/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/17416130/resize-h800-w800%5Ecompr-r85/8264/82649273/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/43135482/resize-h800-w800%5Ecompr-r85/8264/82649138/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/66770220/resize-h56-w56%5Ecompr-r50/8264/82649220/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/62629371/resize-h800-w800%5Ecompr-r85/8264/82649214/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
+                                            },
+                                        ],
+                                        id: 11111,
                                         largeImage1: "https://secure.img1-fg.wfcdn.com/im/47621761/resize-h800-w800%5Ecompr-r85/8264/82649252/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
-                                        smallImage2: "https://secure.img1-fg.wfcdn.com/im/33064334/resize-h56-w56%5Ecompr-r50/8264/82649273/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
-                                        largeImage2: "https://secure.img1-fg.wfcdn.com/im/17416130/resize-h800-w800%5Ecompr-r85/8264/82649273/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
-                                        smallImage3: "https://secure.img1-fg.wfcdn.com/im/36183610/resize-h56-w56%5Ecompr-r50/8264/82649138/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
-                                        largeImage3: "https://secure.img1-fg.wfcdn.com/im/43135482/resize-h800-w800%5Ecompr-r85/8264/82649138/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
-                                        smallImage4: "https://secure.img1-fg.wfcdn.com/im/66770220/resize-h56-w56%5Ecompr-r50/8264/82649220/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
-                                        largeImage4: "https://secure.img1-fg.wfcdn.com/im/66770220/resize-h56-w56%5Ecompr-r50/8264/82649220/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
-                                        smallImage5: "https://secure.img1-fg.wfcdn.com/im/16689721/resize-h56-w56%5Ecompr-r50/8264/82649214/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
-                                        largeImage5: "https://secure.img1-fg.wfcdn.com/im/62629371/resize-h800-w800%5Ecompr-r85/8264/82649214/Quinones+Chesterfield+54%2527%2527+Rolled+Arms+Loveseat.jpg",
                                         description: "Modelled after the classic British Chesterfield sofa, this loveseat brings a traditional element to your den, library, or home office. Upholstered with inviting fabric and filled with foam and fibre, its tight back and rolled arms feature deep button tufting as a nod to the iconic piece of furniture. It sits atop four stacked bun feet – simply screw them in for easy assembly, then curl up with a good book or cup of tea!",
                                         productDetails: [
                                             "Leg Material: Solid Wood",
@@ -177,15 +282,44 @@ const shopByDepartment = [
                                 imageUrl: "https://secure.img1-fg.wfcdn.com/im/21135897/resize-h160-w160%5Ecompr-r85/1083/108360554/Lewellen+Velvet+58%2522+Square+Arm+Loveseat.jpg",
                                 item: [
                                     {
-                                        id: 11115,
-                                        smallImage1: "https://secure.img1-fg.wfcdn.com/im/12721207/resize-h56-w56%5Ecompr-r50/1083/108360877/Lewellen+Velvet+58%2522+Square+Arm+Loveseat.jpg",
-                                        smallImage2: "https://secure.img1-fg.wfcdn.com/im/62331879/resize-h56-w56%5Ecompr-r50/1083/108361854/Lewellen+Velvet+58%2522+Square+Arm+Loveseat.jpg",
-                                        smallImage3: "https://secure.img1-fg.wfcdn.com/im/03291523/resize-h56-w56%5Ecompr-r50/1083/108357846/Lewellen+Velvet+58%2522+Square+Arm+Loveseat.jpg",
-                                        smallImage4: "https://secure.img1-fg.wfcdn.com/im/24072120/resize-h56-w56%5Ecompr-r50/1083/108360876/Lewellen+Velvet+58%2522+Square+Arm+Loveseat.jpg",
+                                        smallImage: [
+                                            {
+                                                id: 11111,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/12721207/resize-h56-w56%5Ecompr-r50/1083/108360877/Lewellen+Velvet+58%2522+Square+Arm+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/62331879/resize-h56-w56%5Ecompr-r50/1083/108361854/Lewellen+Velvet+58%2522+Square+Arm+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/03291523/resize-h56-w56%5Ecompr-r50/1083/108357846/Lewellen+Velvet+58%2522+Square+Arm+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/24072120/resize-h56-w56%5Ecompr-r50/1083/108360876/Lewellen+Velvet+58%2522+Square+Arm+Loveseat.jpg",
+                                            },
+                                        ],
+                                        largeImage: [
+                                            {
+                                                id: 11111,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/67234435/resize-h800-w800%5Ecompr-r85/1083/108360877/Lewellen+Velvet+58%2522+Square+Arm+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/87148645/resize-h800-w800%5Ecompr-r85/1083/108361854/Lewellen+Velvet+58%2522+Square+Arm+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/46189001/resize-h800-w800%5Ecompr-r85/1083/108357846/Lewellen+Velvet+58%2522+Square+Arm+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/78585348/resize-h800-w800%5Ecompr-r85/1083/108360876/Lewellen+Velvet+58%2522+Square+Arm+Loveseat.jpg",
+                                            },
+                                        ],
+                                        id: 11111,
                                         largeImage1: "https://secure.img1-fg.wfcdn.com/im/67234435/resize-h800-w800%5Ecompr-r85/1083/108360877/Lewellen+Velvet+58%2522+Square+Arm+Loveseat.jpg",
-                                        largeImage2: "https://secure.img1-fg.wfcdn.com/im/87148645/resize-h800-w800%5Ecompr-r85/1083/108361854/Lewellen+Velvet+58%2522+Square+Arm+Loveseat.jpg",
-                                        largeImage3: "https://secure.img1-fg.wfcdn.com/im/46189001/resize-h800-w800%5Ecompr-r85/1083/108357846/Lewellen+Velvet+58%2522+Square+Arm+Loveseat.jpg",
-                                        largeImage4: "https://secure.img1-fg.wfcdn.com/im/78585348/resize-h800-w800%5Ecompr-r85/1083/108360876/Lewellen+Velvet+58%2522+Square+Arm+Loveseat.jpg",
                                         description: "Get a modern look that adds comfort and style to your home with the kent sofa set, European style with a sleek design will inspire a fresh look and bring comfort to your living space. Tapered legs and velvet fabric upholstery of this seating collection create a stylish look that embraces vintage flair and modern living. Complete your living room decor with these chic seating options.",
                                         productDetails: [
                                             "Upholstery Material: Velvet",
@@ -205,17 +339,52 @@ const shopByDepartment = [
                                 imageUrl: "https://secure.img1-fg.wfcdn.com/im/79862867/resize-h160-w160%5Ecompr-r85/7881/78812972/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
                                 item: [
                                     {
-                                        id: 11116,
-                                        smallImage1: "https://secure.img1-fg.wfcdn.com/im/76202497/resize-h56-w56%5Ecompr-r50/7881/78812972/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
-                                        smallImage2: "https://secure.img1-fg.wfcdn.com/im/54983273/resize-h56-w56%5Ecompr-r50/8368/83683080/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
-                                        smallImage3: "https://secure.img1-fg.wfcdn.com/im/98227514/resize-h56-w56%5Ecompr-r50/3699/36996224/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
-                                        smallImage4: "https://secure.img1-fg.wfcdn.com/im/09578427/resize-h56-w56%5Ecompr-r50/3699/36996223/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
-                                        smallImage5: "https://secure.img1-fg.wfcdn.com/im/20929340/resize-h56-w56%5Ecompr-r50/3699/36996222/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
+                                        smallImage: [
+                                            {
+                                                id: 11111,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/76202497/resize-h56-w56%5Ecompr-r50/7881/78812972/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/54983273/resize-h56-w56%5Ecompr-r50/8368/83683080/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/98227514/resize-h56-w56%5Ecompr-r50/3699/36996224/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/09578427/resize-h56-w56%5Ecompr-r50/3699/36996223/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/20929340/resize-h56-w56%5Ecompr-r50/3699/36996222/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
+                                            },
+                                        ],
+                                        largeImage: [
+                                            {
+                                                id: 11111,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/03116595/resize-h800-w800%5Ecompr-r85/7881/78812972/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/60664931/resize-h800-w800%5Ecompr-r85/8368/83683080/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/17420690/resize-h800-w800%5Ecompr-r85/3699/36996224/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/06069777/resize-h800-w800%5Ecompr-r85/3699/36996223/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/94718864/resize-h800-w800%5Ecompr-r85/3699/36996222/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
+                                            },
+                                        ],
+                                        id: 11111,
                                         largeImage1: "https://secure.img1-fg.wfcdn.com/im/03116595/resize-h800-w800%5Ecompr-r85/7881/78812972/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
-                                        largeImage2: "https://secure.img1-fg.wfcdn.com/im/60664931/resize-h800-w800%5Ecompr-r85/8368/83683080/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
-                                        largeImage3: "https://secure.img1-fg.wfcdn.com/im/17420690/resize-h800-w800%5Ecompr-r85/3699/36996224/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
-                                        largeImage4: "https://secure.img1-fg.wfcdn.com/im/06069777/resize-h800-w800%5Ecompr-r85/3699/36996223/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
-                                        largeImage5: "https://secure.img1-fg.wfcdn.com/im/94718864/resize-h800-w800%5Ecompr-r85/3699/36996222/Ibiza+Microfiber+80.3%2522+Flared+Arm+Sofa.jpg",
                                         description: "More than just the centerpiece to your living room look, sofas define your overall aesthetic and are a symbol of relaxation. The perfect pick for any contemporary interior design, this one features flared arms, a clean-lined silhouette, and button tufted accents on each back cushion. Crafted from a wood frame, it has four black block feet while up top it flaunts foam-filled microfiber upholstery awash in a solid neutral colour for a look that complements nearly any colour palette.",
                                         productDetails: [
                                             "Upholstery Material: Microfiber/Microsuede",
@@ -235,17 +404,52 @@ const shopByDepartment = [
                                 imageUrl: "https://secure.img1-fg.wfcdn.com/im/64481832/resize-h160-w160%5Ecompr-r85/1079/107976340/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
                                 item: [
                                     {
-                                        id: 11117,
-                                        smallImage1: "https://secure.img1-fg.wfcdn.com/im/33358420/resize-h56-w56%5Ecompr-r50/1079/107976340/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
-                                        smallImage2: "https://secure.img1-fg.wfcdn.com/im/38907050/resize-h56-w56%5Ecompr-r50/1079/107976342/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
-                                        smallImage3: "https://secure.img1-fg.wfcdn.com/im/01007203/resize-h56-w56%5Ecompr-r50/1079/107976327/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
-                                        smallImage4: "https://secure.img1-fg.wfcdn.com/im/99149239/resize-h56-w56%5Ecompr-r50/1079/107976332/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
-                                        smallImage5: "https://secure.img1-fg.wfcdn.com/im/02996347/resize-h56-w56%5Ecompr-r50/1079/107976314/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
+                                        smallImage: [
+                                            {
+                                                id: 11111,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/33358420/resize-h56-w56%5Ecompr-r50/1079/107976340/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/38907050/resize-h56-w56%5Ecompr-r50/1079/107976342/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/01007203/resize-h56-w56%5Ecompr-r50/1079/107976327/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/99149239/resize-h56-w56%5Ecompr-r50/1079/107976332/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/02996347/resize-h56-w56%5Ecompr-r50/1079/107976314/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
+                                            },
+                                        ],
+                                        largeImage: [
+                                            {
+                                                id: 11111,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/93420278/resize-h800-w800%5Ecompr-r85/1079/107976342/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/34976822/resize-h800-w800%5Ecompr-r85/1079/107976320/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/44479569/resize-h800-w800%5Ecompr-r85/1079/107976327/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/44636011/resize-h800-w800%5Ecompr-r85/1079/107976332/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/48483119/resize-h800-w800%5Ecompr-r85/1079/107976314/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
+                                            },
+                                        ],
+                                        id: 11111,
                                         largeImage1: "https://secure.img1-fg.wfcdn.com/im/93420278/resize-h800-w800%5Ecompr-r85/1079/107976342/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
-                                        largeImage2: "https://secure.img1-fg.wfcdn.com/im/34976822/resize-h800-w800%5Ecompr-r85/1079/107976320/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
-                                        largeImage3: "https://secure.img1-fg.wfcdn.com/im/44479569/resize-h800-w800%5Ecompr-r85/1079/107976327/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
-                                        largeImage4: "https://secure.img1-fg.wfcdn.com/im/44636011/resize-h800-w800%5Ecompr-r85/1079/107976332/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
-                                        largeImage5: "https://secure.img1-fg.wfcdn.com/im/48483119/resize-h800-w800%5Ecompr-r85/1079/107976314/Minter+89%2522+Pillow+Top+Arm+Sofa+Bed.jpg",
                                         description: "This transitional sleeper sofa features very plush pillow top arms for additional comfort while sitting, reclining or sleeping. A single touch transforms this full-size sleeper sofa into a bed. Make room for an unexpected guest or create a modern bedroom with this updated convertible futon that is so easy to assemble. The sofa sleeper is a very versatile piece of furniture that has a three-position click style hinge which allows you to sit, recline or sleep 2 comfortably. Polyester fibre, foam and innerspring seat and back cushion. No annoying bar in the back for added sleeping comfort.",
                                         productDetails: [
                                             "Leg Material: Plastic",
@@ -264,17 +468,52 @@ const shopByDepartment = [
                                 imageUrl: "https://secure.img1-fg.wfcdn.com/im/06690162/resize-h160-w160%5Ecompr-r85/9926/99269688/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
                                 item: [
                                     {
-                                        id: 11118,
-                                        smallImage1: "https://secure.img1-fg.wfcdn.com/im/32211770/resize-h56-w56%5Ecompr-r50/9926/99269688/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
-                                        smallImage2: "https://secure.img1-fg.wfcdn.com/im/59345190/resize-h56-w56%5Ecompr-r50/9953/99534832/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
-                                        smallImage3: "https://secure.img1-fg.wfcdn.com/im/48484752/resize-h56-w56%5Ecompr-r50/9926/99269709/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
-                                        smallImage4: "https://secure.img1-fg.wfcdn.com/im/93397929/resize-h56-w56%5Ecompr-r50/9953/99534835/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
-                                        smallImage5: "https://secure.img1-fg.wfcdn.com/im/77615422/resize-h56-w56%5Ecompr-r50/9926/99269684/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
+                                        smallImage: [
+                                            {
+                                                id: 11111,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/32211770/resize-h56-w56%5Ecompr-r50/9926/99269688/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/59345190/resize-h56-w56%5Ecompr-r50/9953/99534832/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/48484752/resize-h56-w56%5Ecompr-r50/9926/99269709/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/93397929/resize-h56-w56%5Ecompr-r50/9953/99534835/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/77615422/resize-h56-w56%5Ecompr-r50/9926/99269684/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
+                                            },
+                                        ],
+                                        largeImage: [
+                                            {
+                                                id: 11111,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/19973902/resize-h800-w800%5Ecompr-r85/9953/99534832/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/19973902/resize-h800-w800%5Ecompr-r85/9953/99534832/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/30834340/resize-h800-w800%5Ecompr-r85/9926/99269709/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/85921163/resize-h800-w800%5Ecompr-r85/9953/99534835/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/38032782/resize-h800-w800%5Ecompr-r85/9926/99269684/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
+                                            },
+                                        ],
+                                        id: 11111,
                                         largeImage1: "https://secure.img1-fg.wfcdn.com/im/19973902/resize-h800-w800%5Ecompr-r85/9953/99534832/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
-                                        largeImage2: "https://secure.img1-fg.wfcdn.com/im/19973902/resize-h800-w800%5Ecompr-r85/9953/99534832/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
-                                        largeImage3: "https://secure.img1-fg.wfcdn.com/im/30834340/resize-h800-w800%5Ecompr-r85/9926/99269709/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
-                                        largeImage4: "https://secure.img1-fg.wfcdn.com/im/85921163/resize-h800-w800%5Ecompr-r85/9953/99534835/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
-                                        largeImage5: "https://secure.img1-fg.wfcdn.com/im/38032782/resize-h800-w800%5Ecompr-r85/9926/99269684/Banton+Standard++52.36%2522+Armless+Loveseat.jpg",
                                         description: "Velvet armless loveseat or couch is a perfect place to spend a wonderful night. The soft velvet cover and the sturdy solid wooden frame provide great comfort and safety. The mid-century look makes your house more attractive. Add this perfect item to your lovely home, both to embellish your living room and create a warm atmosphere.",
                                         productDetails: [
                                             "Upholstery Material: Velvet",
@@ -293,17 +532,52 @@ const shopByDepartment = [
                                 imageUrl: "https://secure.img1-fg.wfcdn.com/im/19044240/resize-h160-w160%5Ecompr-r85/7910/79102176/Ibiza+Loveseat.jpg",
                                 item: [
                                     {
-                                        id: 11119,
-                                        smallImage1: "https://secure.img1-fg.wfcdn.com/im/80142308/resize-h56-w56%5Ecompr-r50/7910/79102176/Ibiza+Loveseat.jpg",
-                                        smallImage2: "https://secure.img1-fg.wfcdn.com/im/62802654/resize-h56-w56%5Ecompr-r50/9497/94972996/Ibiza+Loveseat.jpg",
-                                        smallImage3: "https://secure.img1-fg.wfcdn.com/im/45814780/resize-h56-w56%5Ecompr-r50/3898/38987695/Ibiza+Loveseat.jpg",
-                                        smallImage4: "https://secure.img1-fg.wfcdn.com/im/25830692/resize-h56-w56%5Ecompr-r50/7600/76007436/Ibiza+Loveseat.jpg",
-                                        smallImage5: "https://secure.img1-fg.wfcdn.com/im/98198481/resize-h56-w56%5Ecompr-r50/3218/32182215/Ibiza+Loveseat.jpg",
+                                        smallImage: [
+                                            {
+                                                id: 11111,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/80142308/resize-h56-w56%5Ecompr-r50/7910/79102176/Ibiza+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/62802654/resize-h56-w56%5Ecompr-r50/9497/94972996/Ibiza+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/45814780/resize-h56-w56%5Ecompr-r50/3898/38987695/Ibiza+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/25830692/resize-h56-w56%5Ecompr-r50/7600/76007436/Ibiza+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/98198481/resize-h56-w56%5Ecompr-r50/3218/32182215/Ibiza+Loveseat.jpg",
+                                            },
+                                        ],
+                                        largeImage: [
+                                            {
+                                                id: 11111,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/95790512/resize-h800-w800%5Ecompr-r85/7910/79102176/Ibiza+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/52845550/resize-h800-w800%5Ecompr-r85/9497/94972996/Ibiza+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/30166576/resize-h800-w800%5Ecompr-r85/3898/38987695/Ibiza+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/41478896/resize-h800-w800%5Ecompr-r85/7600/76007436/Ibiza+Loveseat.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/17449723/resize-h800-w800%5Ecompr-r85/3218/32182215/Ibiza+Loveseat.jpg",
+                                            },
+                                        ],
+                                        id: 11111,
                                         largeImage1: "https://secure.img1-fg.wfcdn.com/im/95790512/resize-h800-w800%5Ecompr-r85/7910/79102176/Ibiza+Loveseat.jpg",
-                                        largeImage2: "https://secure.img1-fg.wfcdn.com/im/52845550/resize-h800-w800%5Ecompr-r85/9497/94972996/Ibiza+Loveseat.jpg",
-                                        largeImage3: "https://secure.img1-fg.wfcdn.com/im/30166576/resize-h800-w800%5Ecompr-r85/3898/38987695/Ibiza+Loveseat.jpg",
-                                        largeImage4: "https://secure.img1-fg.wfcdn.com/im/41478896/resize-h800-w800%5Ecompr-r85/7600/76007436/Ibiza+Loveseat.jpg",
-                                        largeImage5: "https://secure.img1-fg.wfcdn.com/im/17449723/resize-h800-w800%5Ecompr-r85/3218/32182215/Ibiza+Loveseat.jpg",
                                         description: "From the days of cereal and Saturday morning cartoons to the years of beers and Sunday night football, we spend a lot of time on our living room sofas. Take this eye-catching loveseat for example: perched atop four tapered legs, this piece is crafted from wood and boasts slightly flared arms. Its foam-filled microsuede upholstery comes in a solid hue with light button-tufted detailing, offering an approachable feel.",
                                         productDetails: [
                                             "Upholstery Material: Microfiber/Microsuede",
@@ -323,17 +597,52 @@ const shopByDepartment = [
                                 imageUrl: "https://secure.img1-fg.wfcdn.com/im/06970566/resize-h160-w160%5Ecompr-r85/6008/60088906/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
                                 item: [
                                     {
-                                        id: 11120,
-                                        smallImage1: "https://secure.img1-fg.wfcdn.com/im/45872498/resize-h56-w56%5Ecompr-r50/6008/60088906/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
-                                        smallImage2: "https://secure.img1-fg.wfcdn.com/im/22018175/resize-h56-w56%5Ecompr-r50/4831/48316033/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
-                                        smallImage3: "https://secure.img1-fg.wfcdn.com/im/57223411/resize-h56-w56%5Ecompr-r50/6008/60088905/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
-                                        smallImage4: "https://secure.img1-fg.wfcdn.com/im/26021725/resize-h56-w56%5Ecompr-r50/4831/48316046/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
-                                        smallImage5: "https://secure.img1-fg.wfcdn.com/im/26021725/resize-h56-w56%5Ecompr-r50/4831/48316046/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
+                                        smallImage: [
+                                            {
+                                                id: 11111,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/45872498/resize-h56-w56%5Ecompr-r50/6008/60088906/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/22018175/resize-h56-w56%5Ecompr-r50/4831/48316033/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/57223411/resize-h56-w56%5Ecompr-r50/6008/60088905/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/26021725/resize-h56-w56%5Ecompr-r50/4831/48316046/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/26021725/resize-h56-w56%5Ecompr-r50/4831/48316046/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
+                                            },
+                                        ],
+                                        largeImage: [
+                                            {
+                                                id: 11111,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/69775706/resize-h800-w800%5Ecompr-r85/6008/60088906/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/93630029/resize-h800-w800%5Ecompr-r85/4831/48316033/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/58424793/resize-h800-w800%5Ecompr-r85/6008/60088905/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/10373521/resize-h800-w800%5Ecompr-r85/4831/48316046/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/55777173/resize-h800-w800%5Ecompr-r85/4831/48316042/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
+                                            },
+                                        ],
+                                        id: 11111,
                                         largeImage1: "https://secure.img1-fg.wfcdn.com/im/69775706/resize-h800-w800%5Ecompr-r85/6008/60088906/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
-                                        largeImage2: "https://secure.img1-fg.wfcdn.com/im/93630029/resize-h800-w800%5Ecompr-r85/4831/48316033/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
-                                        largeImage3: "https://secure.img1-fg.wfcdn.com/im/58424793/resize-h800-w800%5Ecompr-r85/6008/60088905/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
-                                        largeImage4: "https://secure.img1-fg.wfcdn.com/im/10373521/resize-h800-w800%5Ecompr-r85/4831/48316046/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
-                                        largeImage5: "https://secure.img1-fg.wfcdn.com/im/55777173/resize-h800-w800%5Ecompr-r85/4831/48316042/Nia+Velvet+81.5%2522+Square+Arm+Sleeper.jpg",
                                         description: "Nothing says class, sophistication and smooth comfort quite like velvet, and the Nia Pin tufted transitional futon is the ultimate in style! The design itself is stunning. It combines thick cushioning with tufted velvet, sleek arms, tapered wooden legs, and a vintage look that takes you back to the bold and luxurious days of the 1950s. With a variety of colors to match your décor, this sofa can fit perfectly with a contemporary look, classic style or more rustic-looking living space. What’s more, the split-back design seating can be independently lowered into lounging or sleeping position so you can sit up to watch your favorite movie, lounge back to chat with friends or offer overnight guests a perfectly comfortable place to spend the night. The Nia Pin tufted transitional futon comes with soft padding under all four feet to make it easy to move around and ensure your floors are never scuffed or scratched.",
                                         productDetails: [
                                             "Leg Material: Manufactured Wood",
@@ -360,17 +669,52 @@ const shopByDepartment = [
                                 imageUrl: "https://secure.img1-fg.wfcdn.com/im/82390747/resize-h160-w160%5Ecompr-r85/4382/43827453/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
                                 item: [
                                     {
-                                        id: 11121,
-                                        smallImage1: "https://secure.img1-fg.wfcdn.com/im/44492018/resize-h56-w56%5Ecompr-r50/3877/38771456/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
-                                        smallImage2: "https://secure.img1-fg.wfcdn.com/im/21292679/resize-h56-w56%5Ecompr-r50/4382/43827453/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
-                                        smallImage3: "https://secure.img1-fg.wfcdn.com/im/39621878/resize-h56-w56%5Ecompr-r50/4382/43827450/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
-                                        smallImage4: "https://secure.img1-fg.wfcdn.com/im/24792934/resize-h56-w56%5Ecompr-r50/4382/43827421/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
-                                        smallImage5: "https://secure.img1-fg.wfcdn.com/im/54998565/resize-h56-w56%5Ecompr-r50/4382/43827400/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
+                                        smallImage: [
+                                            {
+                                                id: 11111,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/44492018/resize-h56-w56%5Ecompr-r50/3877/38771456/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/21292679/resize-h56-w56%5Ecompr-r50/4382/43827453/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/39621878/resize-h56-w56%5Ecompr-r50/4382/43827450/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/24792934/resize-h56-w56%5Ecompr-r50/4382/43827421/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/54998565/resize-h56-w56%5Ecompr-r50/4382/43827400/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
+                                            },
+                                        ],
+                                        largeImage: [
+                                            {
+                                                id: 11111,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/28843814/resize-h800-w800%5Ecompr-r85/3877/38771456/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/05644475/resize-h800-w800%5Ecompr-r85/4382/43827453/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/39697214/resize-h800-w800%5Ecompr-r85/4382/43827450/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/90855270/resize-h800-w800%5Ecompr-r85/4382/43827421/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/60649639/resize-h800-w800%5Ecompr-r85/4382/43827400/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
+                                            },
+                                        ],
+                                        id: 11111,
                                         largeImage1: "https://secure.img1-fg.wfcdn.com/im/28843814/resize-h800-w800%5Ecompr-r85/3877/38771456/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
-                                        largeImage2: "https://secure.img1-fg.wfcdn.com/im/05644475/resize-h800-w800%5Ecompr-r85/4382/43827453/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
-                                        largeImage3: "https://secure.img1-fg.wfcdn.com/im/39697214/resize-h800-w800%5Ecompr-r85/4382/43827450/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
-                                        largeImage4: "https://secure.img1-fg.wfcdn.com/im/90855270/resize-h800-w800%5Ecompr-r85/4382/43827421/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
-                                        largeImage5: "https://secure.img1-fg.wfcdn.com/im/60649639/resize-h800-w800%5Ecompr-r85/4382/43827400/Isaacs+112%2522+Left+Hand+Facing+Sectional.jpg",
                                         description: "Anchor your den in cozy, inviting style with this contemporary sectional! Striking a classic L-shaped silhouette with a wedge back and one wide track arm, this sectional consists of a three-seat sofa and a matching chaise lounge. Sporting a neutral solid hue, the whole design is enveloped in 100% polyester upholstery. Thick cushions line the seats, chaise, and backrest for comfort and support, while a pair of matching toss pillows makes accessorizing a breeze.",
                                         productDetails: [
                                             "What's Included? Toss Pillow (s)",
@@ -392,21 +736,68 @@ const shopByDepartment = [
                                 imageUrl: "https://secure.img1-fg.wfcdn.com/im/68175606/resize-h160-w160%5Ecompr-r85/4866/48667514/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
                                 item: [
                                     {
-                                        id: 11122,
-                                        smallImage1: "https://secure.img1-fg.wfcdn.com/im/86167718/resize-h56-w56%5Ecompr-r50/8492/84920781/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
-                                        smallImage2: "https://secure.img1-fg.wfcdn.com/im/54388338/resize-h56-w56%5Ecompr-r50/4126/41261977/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
-                                        smallImage3: "https://secure.img1-fg.wfcdn.com/im/24230309/resize-h56-w56%5Ecompr-r50/9610/96102116/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
-                                        smallImage4: "https://secure.img1-fg.wfcdn.com/im/53122663/resize-h56-w56%5Ecompr-r50/4126/41262058/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
-                                        smallImage5: "https://secure.img1-fg.wfcdn.com/im/25183195/resize-h56-w56%5Ecompr-r50/8492/84920782/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
-                                        smallImage6: "https://secure.img1-fg.wfcdn.com/im/79440751/resize-h56-w56%5Ecompr-r50/9743/97433909/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
-                                        smallImage7: "https://secure.img1-fg.wfcdn.com/im/01986135/resize-h56-w56%5Ecompr-r50/9743/97433912/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
+                                        smallImage: [
+                                            {
+                                                id: 11111,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/86167718/resize-h56-w56%5Ecompr-r50/8492/84920781/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/54388338/resize-h56-w56%5Ecompr-r50/4126/41261977/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/24230309/resize-h56-w56%5Ecompr-r50/9610/96102116/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/53122663/resize-h56-w56%5Ecompr-r50/4126/41262058/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/25183195/resize-h56-w56%5Ecompr-r50/8492/84920782/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
+                                            },
+                                            {
+                                                id: 11116,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/79440751/resize-h56-w56%5Ecompr-r50/9743/97433909/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
+                                            },
+                                            {
+                                                id: 11117,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/01986135/resize-h56-w56%5Ecompr-r50/9743/97433912/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
+                                            },
+                                        ],
+                                        largeImage: [
+                                            {
+                                                id: 11111,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/29480486/resize-h800-w800%5Ecompr-r85/8492/84920781/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/61259866/resize-h800-w800%5Ecompr-r85/4126/41261977/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/39878513/resize-h800-w800%5Ecompr-r85/9610/96102116/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/26196429/resize-h800-w800%5Ecompr-r85/4126/41262058/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/40831399/resize-h800-w800%5Ecompr-r85/8492/84920782/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
+                                            },
+                                            {
+                                                id: 11116,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/36207453/resize-h800-w800%5Ecompr-r85/9743/97433909/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
+                                            },
+                                            {
+                                                id: 11117,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/13662069/resize-h800-w800%5Ecompr-r85/9743/97433912/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
+                                            },
+                                        ],
+                                        id: 11111,
                                         largeImage1: "https://secure.img1-fg.wfcdn.com/im/29480486/resize-h800-w800%5Ecompr-r85/8492/84920781/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
-                                        largeImage2: "https://secure.img1-fg.wfcdn.com/im/61259866/resize-h800-w800%5Ecompr-r85/4126/41261977/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
-                                        largeImage3: "https://secure.img1-fg.wfcdn.com/im/39878513/resize-h800-w800%5Ecompr-r85/9610/96102116/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
-                                        largeImage4: "https://secure.img1-fg.wfcdn.com/im/26196429/resize-h800-w800%5Ecompr-r85/4126/41262058/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
-                                        largeImage5: "https://secure.img1-fg.wfcdn.com/im/40831399/resize-h800-w800%5Ecompr-r85/8492/84920782/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
-                                        largeImage6: "https://secure.img1-fg.wfcdn.com/im/36207453/resize-h800-w800%5Ecompr-r85/9743/97433909/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
-                                        largeImage7: "https://secure.img1-fg.wfcdn.com/im/13662069/resize-h800-w800%5Ecompr-r85/9743/97433912/Kayden+84%2522+Chenille+Reversible+Sleeper+Sofa+%2526+Chaise.jpg",
                                         description: "With space to lounge out with the whole family during binge-worthy TV marathons, sectional sofas are a must-have for maximizing both seating arrangements and comfort in your abode. Take this one for example: founded atop tapered legs, it showcases a clean-lined silhouette and complements any contemporary or mid-century-inspired space. Its base is crafted from a blend of solid and manufactured wood while up top, it sports solid-coloured upholstery.",
                                         productDetails: [
                                             "Storage Included: Yes",
@@ -429,15 +820,44 @@ const shopByDepartment = [
                                 imageUrl: "https://secure.img1-fg.wfcdn.com/im/98318801/resize-h160-w160%5Ecompr-r85/1142/114246217/Baldy+90%2522+Right+Hand+Facing+Sofa+%2526+Chaise.jpg",
                                 item: [
                                     {
-                                        id: 11123,
-                                        smallImage1: "https://secure.img1-fg.wfcdn.com/im/27771907/resize-h56-w56%5Ecompr-r50/1142/114246217/Baldy+90%2522+Right+Hand+Facing+Sofa+%2526+Chaise.jpg",
-                                        smallImage2: "https://secure.img1-fg.wfcdn.com/im/21791737/resize-h56-w56%5Ecompr-r50/1142/114246213/Baldy+90%2522+Right+Hand+Facing+Sofa+%2526+Chaise.jpg",
-                                        smallImage3: "https://secure.img1-fg.wfcdn.com/im/21635295/resize-h56-w56%5Ecompr-r50/1142/114246208/Baldy+90%2522+Right+Hand+Facing+Sofa+%2526+Chaise.jpg",
-                                        smallImage4: "https://secure.img1-fg.wfcdn.com/im/12417444/resize-h56-w56%5Ecompr-r50/1142/114246205/Baldy+90%2522+Right+Hand+Facing+Sofa+%2526+Chaise.jpg",
+                                        smallImage: [
+                                            {
+                                                id: 11111,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/27771907/resize-h56-w56%5Ecompr-r50/1142/114246217/Baldy+90%2522+Right+Hand+Facing+Sofa+%2526+Chaise.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/21791737/resize-h56-w56%5Ecompr-r50/1142/114246213/Baldy+90%2522+Right+Hand+Facing+Sofa+%2526+Chaise.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/21635295/resize-h56-w56%5Ecompr-r50/1142/114246208/Baldy+90%2522+Right+Hand+Facing+Sofa+%2526+Chaise.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/12417444/resize-h56-w56%5Ecompr-r50/1142/114246205/Baldy+90%2522+Right+Hand+Facing+Sofa+%2526+Chaise.jpg",
+                                            },
+                                        ],
+                                        largeImage: [
+                                            {
+                                                id: 11111,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/17714865/resize-h800-w800%5Ecompr-r85/1142/114246217/Baldy+90%2522+Right+Hand+Facing+Sofa+%2526+Chaise.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/27688787/resize-h800-w800%5Ecompr-r85/1142/114246213/Baldy+90%2522+Right+Hand+Facing+Sofa+%2526+Chaise.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/27845229/resize-h800-w800%5Ecompr-r85/1142/114246208/Baldy+90%2522+Right+Hand+Facing+Sofa+%2526+Chaise.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/33069328/resize-h800-w800%5Ecompr-r85/1142/114246205/Baldy+90%2522+Right+Hand+Facing+Sofa+%2526+Chaise.jpg",
+                                            },
+                                        ],
+                                        id: 11111,
                                         largeImage1: "https://secure.img1-fg.wfcdn.com/im/17714865/resize-h800-w800%5Ecompr-r85/1142/114246217/Baldy+90%2522+Right+Hand+Facing+Sofa+%2526+Chaise.jpg",
-                                        largeImage2: "https://secure.img1-fg.wfcdn.com/im/27688787/resize-h800-w800%5Ecompr-r85/1142/114246213/Baldy+90%2522+Right+Hand+Facing+Sofa+%2526+Chaise.jpg",
-                                        largeImage3: "https://secure.img1-fg.wfcdn.com/im/27845229/resize-h800-w800%5Ecompr-r85/1142/114246208/Baldy+90%2522+Right+Hand+Facing+Sofa+%2526+Chaise.jpg",
-                                        largeImage4: "https://secure.img1-fg.wfcdn.com/im/33069328/resize-h800-w800%5Ecompr-r85/1142/114246205/Baldy+90%2522+Right+Hand+Facing+Sofa+%2526+Chaise.jpg",
                                         description: "This sleek modern design sectional that conveniently fits well in almost any small space and enhances the elegance of your home, apartment, dorm room, or office. It features accent trim in silver studs and tufted cushions to add a touch of your space.",
                                         productDetails: [
                                             "Orientation: Right Hand Facing",
@@ -458,17 +878,52 @@ const shopByDepartment = [
                                 imageUrl: "https://secure.img1-fg.wfcdn.com/im/18194670/resize-h160-w160%5Ecompr-r85/8001/80013810/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
                                 item: [
                                     {
-                                        id: 11124,
-                                        smallImage1: "https://secure.img1-fg.wfcdn.com/im/79292738/resize-h56-w56%5Ecompr-r50/8001/80013810/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
-                                        smallImage2: "https://secure.img1-fg.wfcdn.com/im/49569469/resize-h56-w56%5Ecompr-r50/8249/82495873/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
-                                        smallImage3: "https://secure.img1-fg.wfcdn.com/im/33798134/resize-h56-w56%5Ecompr-r50/7739/77396489/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
-                                        smallImage4: "https://secure.img1-fg.wfcdn.com/im/44992605/resize-h56-w56%5Ecompr-r50/7739/77396493/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
-                                        smallImage5: "https://secure.img1-fg.wfcdn.com/im/51058380/resize-h56-w56%5Ecompr-r50/7739/77396502/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
+                                        smallImage: [
+                                            {
+                                                id: 11111,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/79292738/resize-h56-w56%5Ecompr-r50/8001/80013810/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/49569469/resize-h56-w56%5Ecompr-r50/8249/82495873/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/33798134/resize-h56-w56%5Ecompr-r50/7739/77396489/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/44992605/resize-h56-w56%5Ecompr-r50/7739/77396493/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/51058380/resize-h56-w56%5Ecompr-r50/7739/77396502/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
+                                            },
+                                        ],
+                                        largeImage: [
+                                            {
+                                                id: 11111,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/94940942/resize-h800-w800%5Ecompr-r85/8001/80013810/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/66078735/resize-h800-w800%5Ecompr-r85/8249/82495873/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/81850070/resize-h800-w800%5Ecompr-r85/7739/77396489/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/70655599/resize-h800-w800%5Ecompr-r85/7739/77396493/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11115,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/28260712/resize-h800-w800%5Ecompr-r85/7739/77396502/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
+                                            },
+                                        ],
+                                        id: 11111,
                                         largeImage1: "https://secure.img1-fg.wfcdn.com/im/94940942/resize-h800-w800%5Ecompr-r85/8001/80013810/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
-                                        largeImage2: "https://secure.img1-fg.wfcdn.com/im/66078735/resize-h800-w800%5Ecompr-r85/8249/82495873/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
-                                        largeImage3: "https://secure.img1-fg.wfcdn.com/im/81850070/resize-h800-w800%5Ecompr-r85/7739/77396489/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
-                                        largeImage4: "https://secure.img1-fg.wfcdn.com/im/70655599/resize-h800-w800%5Ecompr-r85/7739/77396493/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
-                                        largeImage5: "https://secure.img1-fg.wfcdn.com/im/28260712/resize-h800-w800%5Ecompr-r85/7739/77396502/Hendrick+88.6%2522+Pull+Out+Reversible+Sleeper+Sectional.jpg",
                                         description: "Founded on a solid and manufactured wood frame, this contemporary sectional strikes a classic L-shaped silhouette featuring a full back, track arms, and tapered block feet. Enveloped in grey polyester-blend upholstery, detail stitching lends a tailored touch, while foam and synthetic fibre-filled cushions and a pair of toss pillows provide added comfort and support. Expecting overnight guests? This sofa easily converts to a pull-out sleeper, while the chaise features hidden storage.",
                                         productDetails: [
                                             "What's Included? Toss Pillow (s)",
@@ -491,15 +946,44 @@ const shopByDepartment = [
                                 imageUrl: "https://secure.img1-fg.wfcdn.com/im/43902319/resize-h160-w160%5Ecompr-r85/4725/47255483/Althea+134%2522+Left+Hand+Facing+Modular+Sectional.jpg",
                                 item: [
                                     {
-                                        id: 11125,
-                                        smallImage1: "https://secure.img1-fg.wfcdn.com/im/82804251/resize-h56-w56%5Ecompr-r50/4725/47255483/Althea+134%2522+Left+Hand+Facing+Modular+Sectional.jpg",
-                                        smallImage2: "https://secure.img1-fg.wfcdn.com/im/60102425/resize-h56-w56%5Ecompr-r50/4725/47255485/Althea+134%2522+Left+Hand+Facing+Modular+Sectional.jpg",
-                                        smallImage3: "https://secure.img1-fg.wfcdn.com/im/48751512/resize-h56-w56%5Ecompr-r50/4725/47255486/Althea+134%2522+Left+Hand+Facing+Modular+Sectional.jpg",
-                                        smallImage4: "https://secure.img1-fg.wfcdn.com/im/71453338/resize-h56-w56%5Ecompr-r50/4725/47255484/Althea+134%2522+Left+Hand+Facing+Modular+Sectional.jpg",
+                                        smallImage: [
+                                            {
+                                                id: 11111,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/82804251/resize-h56-w56%5Ecompr-r50/4725/47255483/Althea+134%2522+Left+Hand+Facing+Modular+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/60102425/resize-h56-w56%5Ecompr-r50/4725/47255485/Althea+134%2522+Left+Hand+Facing+Modular+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/48751512/resize-h56-w56%5Ecompr-r50/4725/47255486/Althea+134%2522+Left+Hand+Facing+Modular+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/71453338/resize-h56-w56%5Ecompr-r50/4725/47255484/Althea+134%2522+Left+Hand+Facing+Modular+Sectional.jpg",
+                                            },
+                                        ],
+                                        largeImage: [
+                                            {
+                                                id: 11111,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/67156047/resize-h800-w800%5Ecompr-r85/4725/47255483/Althea+134%2522+Left+Hand+Facing+Modular+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/55545779/resize-h800-w800%5Ecompr-r85/4725/47255485/Althea+134%2522+Left+Hand+Facing+Modular+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/55545779/resize-h800-w800%5Ecompr-r85/4725/47255485/Althea+134%2522+Left+Hand+Facing+Modular+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/55545779/resize-h800-w800%5Ecompr-r85/4725/47255485/Althea+134%2522+Left+Hand+Facing+Modular+Sectional.jpg",
+                                            },
+                                        ],
+                                        id: 11111,
                                         largeImage1: "https://secure.img1-fg.wfcdn.com/im/67156047/resize-h800-w800%5Ecompr-r85/4725/47255483/Althea+134%2522+Left+Hand+Facing+Modular+Sectional.jpg",
-                                        largeImage2: "https://secure.img1-fg.wfcdn.com/im/55545779/resize-h800-w800%5Ecompr-r85/4725/47255485/Althea+134%2522+Left+Hand+Facing+Modular+Sectional.jpg",
-                                        largeImage3: "https://secure.img1-fg.wfcdn.com/im/55545779/resize-h800-w800%5Ecompr-r85/4725/47255485/Althea+134%2522+Left+Hand+Facing+Modular+Sectional.jpg",
-                                        largeImage4: "https://secure.img1-fg.wfcdn.com/im/55545779/resize-h800-w800%5Ecompr-r85/4725/47255485/Althea+134%2522+Left+Hand+Facing+Modular+Sectional.jpg",
                                         description: "This sectional is manufactured with quality in mind. Using only hardwood frames, Certi-PUR foam, and durable fabrics that are hand tailored to the piece.",
                                         productDetails: [
                                             "What's Included? Toss Pillow (s)",
@@ -524,13 +1008,36 @@ const shopByDepartment = [
                                 imageUrl: "https://secure.img1-fg.wfcdn.com/im/75572569/resize-h160-w160%5Ecompr-r85/3188/31885382/Galena+Left+Hand+Facing+Sectional.jpg",
                                 item: [
                                     {
-                                        id: 11126,
-                                        smallImage1: "https://secure.img1-fg.wfcdn.com/im/14474501/resize-h56-w56%5Ecompr-r50/3188/31885382/Galena+Left+Hand+Facing+Sectional.jpg",
-                                        smallImage2: "https://secure.img1-fg.wfcdn.com/im/79482245/resize-h56-w56%5Ecompr-r50/1055/105599786/Galena+Left+Hand+Facing+Sectional.jpg",
-                                        smallImage3: "https://secure.img1-fg.wfcdn.com/im/29386617/resize-h56-w56%5Ecompr-r50/3447/34474156/Galena+Left+Hand+Facing+Sectional.jpg",
+                                        smallImage: [
+                                            {
+                                                id: 11111,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/14474501/resize-h56-w56%5Ecompr-r50/3188/31885382/Galena+Left+Hand+Facing+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/79482245/resize-h56-w56%5Ecompr-r50/1055/105599786/Galena+Left+Hand+Facing+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/29386617/resize-h56-w56%5Ecompr-r50/3447/34474156/Galena+Left+Hand+Facing+Sectional.jpg",
+                                            },
+                                        ],
+                                        largeImage: [
+                                            {
+                                                id: 11111,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/29386617/resize-h56-w56%5Ecompr-r50/3447/34474156/Galena+Left+Hand+Facing+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/33995473/resize-h800-w800%5Ecompr-r85/1055/105599786/Galena+Left+Hand+Facing+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/86261587/resize-h800-w800%5Ecompr-r85/3447/34474156/Galena+Left+Hand+Facing+Sectional.jpg",
+                                            },
+                                        ],
+                                        id: 11111,
                                         largeImage1: "https://secure.img1-fg.wfcdn.com/im/29386617/resize-h56-w56%5Ecompr-r50/3447/34474156/Galena+Left+Hand+Facing+Sectional.jpg",
-                                        largeImage2: "https://secure.img1-fg.wfcdn.com/im/33995473/resize-h800-w800%5Ecompr-r85/1055/105599786/Galena+Left+Hand+Facing+Sectional.jpg",
-                                        largeImage3: "https://secure.img1-fg.wfcdn.com/im/86261587/resize-h800-w800%5Ecompr-r85/3447/34474156/Galena+Left+Hand+Facing+Sectional.jpg",
                                         description: "",
                                         productDetails: [
                                             "What's Included? Toss Pillow (s)",
@@ -551,8 +1058,19 @@ const shopByDepartment = [
                                 imageUrl: "https://secure.img1-fg.wfcdn.com/im/21558680/resize-h160-w160%5Ecompr-r85/6161/61612740/150%2522+Left+Hand+Facing+Large+Sectional.jpg",
                                 item: [
                                     {
-                                        id: 11127,
-                                        smallImage1: "https://secure.img1-fg.wfcdn.com/im/60460612/resize-h56-w56%5Ecompr-r50/6161/61612740/150%2522+Left+Hand+Facing+Large+Sectional.jpg",
+                                        smallImage: [
+                                            {
+                                                id: 11111,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/60460612/resize-h56-w56%5Ecompr-r50/6161/61612740/150%2522+Left+Hand+Facing+Large+Sectional.jpg",
+                                            },
+                                        ],
+                                        largeImage: [
+                                            {
+                                                id: 11111,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/55187592/resize-h800-w800%5Ecompr-r85/6161/61612740/150%2522+Left+Hand+Facing+Large+Sectional.jpg",
+                                            },
+                                        ],
+                                        id: 11111,
                                         largeImage1: "https://secure.img1-fg.wfcdn.com/im/55187592/resize-h800-w800%5Ecompr-r85/6161/61612740/150%2522+Left+Hand+Facing+Large+Sectional.jpg",
                                         description: "",
                                         productDetails: [
@@ -576,13 +1094,36 @@ const shopByDepartment = [
                                 imageUrl: "https://secure.img1-fg.wfcdn.com/im/02271809/resize-h160-w160%5Ecompr-r85/1137/113769173/Gerrald+124%2522+Sectional.jpg",
                                 item: [
                                     {
-                                        id: 11128,
-                                        smallImage1: "https://secure.img1-fg.wfcdn.com/im/66604779/resize-h56-w56%5Ecompr-r50/1137/113769173/Gerrald+124%2522+Sectional.jpg",
-                                        smallImage2: "https://secure.img1-fg.wfcdn.com/im/66604779/resize-h56-w56%5Ecompr-r50/1137/113769173/Gerrald+124%2522+Sectional.jpg",
-                                        smallImage3: "https://secure.img1-fg.wfcdn.com/im/77831568/c_crop-h60-w60%5Ecompr-r85/6206/62062186/STL_Room+featuring+Gerrald+124%2522+Sectional_62062186.jpg",
+                                        smallImage: [
+                                            {
+                                                id: 11111,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/66604779/resize-h56-w56%5Ecompr-r50/1137/113769173/Gerrald+124%2522+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/66604779/resize-h56-w56%5Ecompr-r50/1137/113769173/Gerrald+124%2522+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/77831568/c_crop-h60-w60%5Ecompr-r85/6206/62062186/STL_Room+featuring+Gerrald+124%2522+Sectional_62062186.jpg",
+                                            },
+                                        ],
+                                        largeImage: [
+                                            {
+                                                id: 11111,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/12091551/resize-h800-w800%5Ecompr-r85/1137/113769173/Gerrald+124%2522+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/11306241/resize-h800-w800%5Ecompr-r85/1114/111408102/Gerrald+124%2522+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/33234032/resize-h800-w800%5Ecompr-r85/6206/62062186/STL_Modern+Living+Room+Design_62062186.jpg",
+                                            },
+                                        ],
+                                        id: 11111,
                                         largeImage1: "https://secure.img1-fg.wfcdn.com/im/12091551/resize-h800-w800%5Ecompr-r85/1137/113769173/Gerrald+124%2522+Sectional.jpg",
-                                        largeImage2: "https://secure.img1-fg.wfcdn.com/im/11306241/resize-h800-w800%5Ecompr-r85/1114/111408102/Gerrald+124%2522+Sectional.jpg",
-                                        largeImage3: "https://secure.img1-fg.wfcdn.com/im/33234032/resize-h800-w800%5Ecompr-r85/6206/62062186/STL_Modern+Living+Room+Design_62062186.jpg",
                                         description: "Set the foundation for a casual seating group with this sectional, a perfect pick for traditional and transitional spaces. Founded atop bun feet, its solid and manufactured wood frame strikes an L-shaped silhouette that comfortably seats up to four, while square arms and neutral polyester blend upholstery complete the look. Throw pillows are included, making this a great place to get cozy for movie night or lounge with your latest book club read.",
                                         productDetails: [
                                             "What's Included? Toss Pillow (s)",
@@ -606,11 +1147,28 @@ const shopByDepartment = [
                                 imageUrl: "https://secure.img1-fg.wfcdn.com/im/45021869/resize-h160-w160%5Ecompr-r85/4960/49600283/Perrault+130%2522+Right+Hand+Facing+Sectional.jpg",
                                 item: [
                                     {
-                                        id: 11129,
-                                        smallImage1: "https://secure.img1-fg.wfcdn.com/im/93880063/resize-h56-w56%5Ecompr-r50/4960/49600283/Perrault+130%2522+Right+Hand+Facing+Sectional.jpg",
-                                        smallImage2: "https://secure.img1-fg.wfcdn.com/im/35436607/resize-h56-w56%5Ecompr-r50/4960/49600261/Perrault+130%2522+Right+Hand+Facing+Sectional.jpg",
+                                        smallImage: [
+                                            {
+                                                id: 11111,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/93880063/resize-h56-w56%5Ecompr-r50/4960/49600283/Perrault+130%2522+Right+Hand+Facing+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/35436607/resize-h56-w56%5Ecompr-r50/4960/49600261/Perrault+130%2522+Right+Hand+Facing+Sectional.jpg",
+                                            },
+                                        ],
+                                        largeImage: [
+                                            {
+                                                id: 11111,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/21768141/resize-h800-w800%5Ecompr-r85/4960/49600283/Perrault+130%2522+Right+Hand+Facing+Sectional.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/80211597/resize-h800-w800%5Ecompr-r85/4960/49600261/Perrault+130%2522+Right+Hand+Facing+Sectional.jpg",
+                                            },
+                                        ],
+                                        id: 11111,
                                         largeImage1: "https://secure.img1-fg.wfcdn.com/im/21768141/resize-h800-w800%5Ecompr-r85/4960/49600283/Perrault+130%2522+Right+Hand+Facing+Sectional.jpg",
-                                        largeImage2: "https://secure.img1-fg.wfcdn.com/im/80211597/resize-h800-w800%5Ecompr-r85/4960/49600261/Perrault+130%2522+Right+Hand+Facing+Sectional.jpg",
                                         description: "",
                                         productDetails: [
                                             "What's Included? Toss Pillow (s)",
@@ -634,15 +1192,44 @@ const shopByDepartment = [
                                 imageUrl: "https://secure.img1-fg.wfcdn.com/im/95138831/resize-h160-w160%5Ecompr-r85/1095/109557982/Russ+103.5%2522+Sectional+with+Ottoman.jpg",
                                 item: [
                                     {
-                                        id: 11130,
-                                        smallImage1: "https://secure.img1-fg.wfcdn.com/im/30951877/resize-h56-w56%5Ecompr-r50/1095/109557982/Russ+103.5%2522+Sectional+with+Ottoman.jpg",
-                                        smallImage2: "https://secure.img1-fg.wfcdn.com/im/37153601/resize-h56-w56%5Ecompr-r50/1095/109557988/Russ+103.5%2522+Sectional+with+Ottoman.jpg",
-                                        smallImage3: "https://secure.img1-fg.wfcdn.com/im/41680756/resize-h56-w56%5Ecompr-r50/1107/110745997/Russ+103.5%2522+Sectional+with+Ottoman.jpg",
-                                        smallImage4: "https://secure.img1-fg.wfcdn.com/im/25959130/resize-h56-w56%5Ecompr-r50/1095/109557992/Russ+103.5%2522+Sectional+with+Ottoman.jpg",
+                                        smallImage: [
+                                            {
+                                                id: 11111,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/30951877/resize-h56-w56%5Ecompr-r50/1095/109557982/Russ+103.5%2522+Sectional+with+Ottoman.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/37153601/resize-h56-w56%5Ecompr-r50/1095/109557988/Russ+103.5%2522+Sectional+with+Ottoman.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/41680756/resize-h56-w56%5Ecompr-r50/1107/110745997/Russ+103.5%2522+Sectional+with+Ottoman.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                smallImage: "https://secure.img1-fg.wfcdn.com/im/25959130/resize-h56-w56%5Ecompr-r50/1095/109557992/Russ+103.5%2522+Sectional+with+Ottoman.jpg",
+                                            },
+                                        ],
+                                        largeImage: [
+                                            {
+                                                id: 11111,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/14534895/resize-h800-w800%5Ecompr-r85/1095/109557982/Russ+103.5%2522+Sectional+with+Ottoman.jpg",
+                                            },
+                                            {
+                                                id: 11112,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/82640373/resize-h800-w800%5Ecompr-r85/1095/109557988/Russ+103.5%2522+Sectional+with+Ottoman.jpg",
+                                            },
+                                            {
+                                                id: 11113,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/87167528/resize-h800-w800%5Ecompr-r85/1107/110745997/Russ+103.5%2522+Sectional+with+Ottoman.jpg",
+                                            },
+                                            {
+                                                id: 11114,
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/23521394/resize-h800-w800%5Ecompr-r85/1095/109557992/Russ+103.5%2522+Sectional+with+Ottoman.jpg",
+                                            },
+                                        ],
+                                        id: 11111,
                                         largeImage1: "https://secure.img1-fg.wfcdn.com/im/14534895/resize-h800-w800%5Ecompr-r85/1095/109557982/Russ+103.5%2522+Sectional+with+Ottoman.jpg",
-                                        largeImage2: "https://secure.img1-fg.wfcdn.com/im/82640373/resize-h800-w800%5Ecompr-r85/1095/109557988/Russ+103.5%2522+Sectional+with+Ottoman.jpg",
-                                        largeImage3: "https://secure.img1-fg.wfcdn.com/im/87167528/resize-h800-w800%5Ecompr-r85/1107/110745997/Russ+103.5%2522+Sectional+with+Ottoman.jpg",
-                                        largeImage4: "https://secure.img1-fg.wfcdn.com/im/23521394/resize-h800-w800%5Ecompr-r85/1095/109557992/Russ+103.5%2522+Sectional+with+Ottoman.jpg",
                                         description: "Offering seating and storage space, this Sectional with Ottoman is an ideal option for living rooms that are a bit short on square footage. Crafted with a solid wood frame, this piece is filled with foam and is upholstered with both linen and microfiber for textural contrast. The convenient compartment in the ottoman (included) provides the perfect place to stash spare blankets and magazines.",
                                         productDetails: [
                                             "What's Included? Toss Pillow (s)",

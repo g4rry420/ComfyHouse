@@ -9,7 +9,9 @@ export default function Homepage() {
     return (
         <div>
             <HeroSection/>
-            <Heading title="Shop By Department" display="display-3" h1="homepage-h1" />
+            <div id="shopNow">
+                <Heading title="Shop By Department" display="display-3" h1="homepage-h1" />
+            </div>
             <Directory/>
         </div>
     )
