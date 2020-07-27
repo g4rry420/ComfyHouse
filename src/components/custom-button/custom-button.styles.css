@@ -1,0 +1,9 @@
+.custom-button{
+    background-color: var(--primaryColor);  
+    color: var(--mainBlack);
+    transition: var(--mainTransition);
+    transform: translateX(101%);
+}
+.custom-button:hover {
+    color: var(--light);
+}

@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink, Link } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { ReactComponent as Logo } from "../../assets/logo.svg"
 import "./header.styles.css"
+import { ReactComponent as Logo } from "../../assets/logo.svg"
+import CartIcon from '../cart-icon/cart-icon.component';
+import CartDropdown from "../cart-dropdown/cart-dropdown.component"
+import { ShopProductsContext } from "../../context/shopProducts/shopProductsContext"
 
-export default function Header() {
+function Header() {
+    const { cartHidden } = useContext(ShopProductsContext);
     return (
         <nav className="container d-flex p-3 justify-content-between">
             <div>
@@ -15,8 +19,15 @@ export default function Header() {
                 <li className="list-menu"><NavLink exact to="/" className="icon-link icon-2">LogIn</NavLink></li>
                 <li className="list-menu"><NavLink to="/" className="icon-link icon-2">Logout</NavLink></li>
                 <li className="list-menu"><NavLink to="/" className="icon-link icon-2">SignUp</NavLink></li>
-                <li className="list-menu"><NavLink to="/" className="icon-link icon-2">Cart</NavLink></li>
+                <li className="list-menu cart-icon-link">
+                   <CartIcon />
+                </li>
             </ul>
+            {
+                cartHidden ? null : <CartDropdown/>
+            }
         </nav>
     )
 }
+
+export default Header

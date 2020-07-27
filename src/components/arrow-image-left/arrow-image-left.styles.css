@@ -1,0 +1,18 @@
+.arrow-left-circle {
+    background-color: white;
+    position: absolute;
+    bottom: 45%;
+    left: 0;
+    padding: 10px;
+    border-radius: 37px;
+}
+
+.arrow-left-circle svg {
+    font-size: 2.8rem;
+}
+
+.arrow-left-circle:hover {
+    border: 1px solid var(--primaryColor);
+    color: var(--primaryColor);
+    cursor: pointer;
+}
