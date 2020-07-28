@@ -14,13 +14,14 @@ export default function IndividualItemRightSide({ state }) {
                 h1="heading-in-individual-item"  />
             <h4 className="display-4 text-center my-5 text-uppercase"> cad ${state.price}</h4>
             
-            <div onClick={() => addItemToCart(dispatchCart, state)}>
-                <CustomButton title="Add to cart" button="btn-cart" />
+            <div onClick={() => addItemToCart(dispatchCart, state)} className="add-to-cart-button">
+                <CustomButton title="Add to cart" button="btn-cart p-2" />
             </div>
-
-            <h5 className="display-4 my-5">Description</h5>
-            <p> {state.item[0].description} </p>
-            <h5 className="display-4 my-4">Product Details</h5>
+            <div className="descriptions">
+                <h5 className="display-4 my-5">Description</h5>
+                <p> {state.item[0].description} </p>
+                <h5 className="display-4 my-4">Product Details</h5>
+            </div>
         </div>
     )
 }

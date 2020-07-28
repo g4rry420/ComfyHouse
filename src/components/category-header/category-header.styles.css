@@ -4,3 +4,8 @@
 .category-img-container img{
     width: 100%;
 }
+@media only screen and (max-width: 750px){
+    .category-img-container{
+        display: none;
+    }
+}

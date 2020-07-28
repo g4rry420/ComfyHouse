@@ -21,3 +21,16 @@
 .btn-cart div{
     font-size: 23px;
 }
+
+@media only screen and (max-width: 750px){
+    .individual-item-right-side-container h4{
+        font-size: 38px;
+    }
+    .individual-item-right-side-container .add-to-cart-button{
+        margin-left: -118px;
+    }
+    .descriptions{
+        padding: 5px;
+        text-align: center;
+    }
+}

@@ -16,3 +16,8 @@
     font-size: 30px;
     font-weight: 600;
 }
+@media only screen and (max-width: 750px){
+    .mainSection-heading-container{
+        display: none;
+    }
+}

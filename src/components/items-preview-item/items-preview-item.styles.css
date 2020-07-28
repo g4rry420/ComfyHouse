@@ -29,3 +29,9 @@
     color: #c4113f !important;
     font-weight: 600;
 }
+@media only screen and (max-width: 750px){
+    .items-preview-card-container{
+        margin: 0 !important;
+        margin: 20px 0 !important;
+    }
+}

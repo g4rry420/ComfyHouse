@@ -8,11 +8,11 @@ import { ShopProductsContext } from "../../context/shopProducts/shopProductsCont
 
 
 export default function CartIcon() {
-    const { cartHidden, setCartHidden }  = useContext(ShopProductsContext)
+    const { cartHidden, setCartHidden, cart }  = useContext(ShopProductsContext)
     return (
         <div className="cart-icon-container" onClick={() => setCartHidden(!cartHidden)}>
             <ShoppingIcon className="cart-icon" />
-            <span>0</span>
+            <span> {cart.length} </span>
         </div>
     )
 }

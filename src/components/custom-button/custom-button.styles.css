@@ -1,9 +1,11 @@
 .custom-button{
     background-color: var(--primaryColor);  
-    color: var(--mainBlack);
+    color: var(--light);
     transition: var(--mainTransition);
     transform: translateX(101%);
+    border: 1px solid var(--primaryColor);
 }
 .custom-button:hover {
-    color: var(--light);
+    background: transparent;
+    color: var(--primaryColor);
 }

@@ -15,5 +15,18 @@
     height: 240px;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    overflow: auto;
+}
+.empty-message{
+    font-size: 18px;
+    margin: 101px auto;
+}
+.cart-dropdown-button{
+    margin-left: -103%;
+    margin-top: 7%;
+}
+.cart-dropdown-button div{
+   padding: 0 !important;
+   font-weight: 600;
+   text-transform: uppercase;
 }

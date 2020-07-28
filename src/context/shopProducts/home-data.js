@@ -1025,7 +1025,7 @@ const shopByDepartment = [
                                         largeImage: [
                                             {
                                                 id: 11111,
-                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/29386617/resize-h56-w56%5Ecompr-r50/3447/34474156/Galena+Left+Hand+Facing+Sectional.jpg",
+                                                largeImage: "https://secure.img1-fg.wfcdn.com/im/98826297/resize-h800-w800%5Ecompr-r85/3188/31885382/default_name.jpg",
                                             },
                                             {
                                                 id: 11112,
@@ -1037,7 +1037,7 @@ const shopByDepartment = [
                                             },
                                         ],
                                         id: 11111,
-                                        largeImage1: "https://secure.img1-fg.wfcdn.com/im/29386617/resize-h56-w56%5Ecompr-r50/3447/34474156/Galena+Left+Hand+Facing+Sectional.jpg",
+                                        largeImage1: "https://secure.img1-fg.wfcdn.com/im/98826297/resize-h800-w800%5Ecompr-r85/3188/31885382/default_name.jpg",
                                         description: "",
                                         productDetails: [
                                             "What's Included? Toss Pillow (s)",

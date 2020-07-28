@@ -7,3 +7,8 @@
     color: var(--primaryColor) !important;
     text-decoration: underline !important;
 }
+@media only screen and (max-width: 750px){
+    .category-links-container{
+        display: none;
+    }
+}
