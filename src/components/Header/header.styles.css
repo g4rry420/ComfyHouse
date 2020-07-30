@@ -1,4 +1,6 @@
-
+.links{
+    justify-content: space-evenly !important;
+}
 .links a {
     color: black;
     font-weight: 600;
@@ -139,6 +141,15 @@
     top: 0;
 }
 /* Burger navbar ends here */
+.sign-out{
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+}
+.sign-out:hover{
+    color: var(--primaryColor);
+    text-decoration: underline;
+}
 
 @media only screen and (max-width: 750px) {
     .navbar-logo, .list-menu-desktop{

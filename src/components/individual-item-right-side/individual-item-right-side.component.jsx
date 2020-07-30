@@ -7,7 +7,8 @@ import { ShopProductsContext } from "../../context/shopProducts/shopProductsCont
 import { addItemToCart } from "../../context/reducers/cart-reducer/cart-actions"
 
 export default function IndividualItemRightSide({ state }) {
-    const { dispatchCart } = useContext(ShopProductsContext)
+    const { cart, dispatchCart } = useContext(ShopProductsContext)
+    console.log(state)
     return (
         <div className="individual-item-right-side-container">
             <Heading title={state.title} display="display-5"
@@ -15,7 +16,14 @@ export default function IndividualItemRightSide({ state }) {
             <h4 className="display-4 text-center my-5 text-uppercase"> cad ${state.price}</h4>
             
             <div onClick={() => addItemToCart(dispatchCart, state)} className="add-to-cart-button">
-                <CustomButton title="Add to cart" button="btn-cart p-2" />
+            {
+                // !cart.map(item => item.id).includes(state.id) ? (
+                    <CustomButton title="Add to cart" button="btn-cart p-2" />
+                // ) : (
+                    // <CustomButton title="Already Added" button="btn-cart p-2" />
+                // )
+            }
+                
             </div>
             <div className="descriptions">
                 <h5 className="display-4 my-5">Description</h5>

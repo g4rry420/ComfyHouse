@@ -2,7 +2,6 @@
     background-color: var(--primaryColor);  
     color: var(--light);
     transition: var(--mainTransition);
-    transform: translateX(101%);
     border: 1px solid var(--primaryColor);
 }
 .custom-button:hover {
