@@ -1,5 +1,5 @@
 .links{
-    justify-content: space-evenly !important;
+    justify-content: space-between !important;
 }
 .links a {
     color: black;

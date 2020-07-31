@@ -7,7 +7,7 @@ import Department from '../department/department.component';
 export default function Directory() {
     return (
         <section className="container directory">
-                <Department />
+                <Department  />
         </section>
     )
 }

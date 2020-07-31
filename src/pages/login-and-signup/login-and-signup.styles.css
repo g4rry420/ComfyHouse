@@ -32,3 +32,10 @@
     background-color: transparent;
     color: #4285F4;
 }
+
+@media only screen and (max-width: 750px) {
+    .signup-container-in-mainPage{
+        margin: 0 !important;
+        margin-top: 20% !important;
+    }
+}

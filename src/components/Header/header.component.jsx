@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useEffect, useState } from 'react'
+import React, { useContext, useRef } from 'react'
 import { NavLink, Link } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -7,30 +7,15 @@ import { ReactComponent as Logo } from "../../assets/logo.svg"
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from "../cart-dropdown/cart-dropdown.component"
 import { ShopProductsContext } from "../../context/shopProducts/shopProductsContext"
-import { auth, createUserProfileDocument } from "../../firebase/firebase.utils.js"
+import { auth } from "../../firebase/firebase.utils.js"
 
 function Header() {
-    const { cartHidden } = useContext(ShopProductsContext);
-    const [currentUser, setCurrentUser] = useState(null);
+    const { cartHidden, currentUser } = useContext(ShopProductsContext);
     const toggleNavbar = useRef();
     const navbar = (e) => {
         toggleNavbar.current.classList.toggle("sidebar-open")
     }
 
-    useEffect(() => {
-        auth.onAuthStateChanged(async userAuth => {
-           if(userAuth) {
-               const userRef = await createUserProfileDocument(userAuth);
-
-               userRef.onSnapshot(snapshot => {
-                   setCurrentUser({
-                       id: snapshot.id,
-                       ...snapshot.data()
-                   })
-               })
-           }
-        })
-    }, [])
     return (
         <nav className="container d-flex p-3 justify-content-between">
             <div className="navbar-logo">
@@ -49,9 +34,9 @@ function Header() {
                         <li className="list-menu"><NavLink exact to="/" className="icon-link icon-2">Homepage</NavLink></li>
                         {
                             currentUser ? 
-                            (<li onClick={() => auth.signOut()} className="list-menu-desktop sign-out">SignOut</li>)
+                            (<li onClick={() => auth.signOut() } className=" sign-out">SignOut</li>)
                             : 
-                            (<li className="list-menu-desktop"><NavLink exact to="/loginorsignup" className="icon-link icon-2">SignUp</NavLink></li>)
+                            (<li className="list-menu "><NavLink exact to="/loginorsignup" className="icon-link icon-2">SignUp</NavLink></li>)
                         }
                             
                         </ul>
@@ -62,7 +47,9 @@ function Header() {
             <ul className="nav-list-desktop d-flex links">
             {
                 currentUser ? 
-                (<li onClick={() => auth.signOut()} className="list-menu-desktop sign-out">SignOut</li>)
+                (<li onClick={() =>{
+                    auth.signOut()
+                }} className="list-menu-desktop sign-out">SignOut</li>)
                 : 
                 (<li className="list-menu-desktop"><NavLink exact to="/loginorsignup" className="icon-link icon-2">SignUp</NavLink></li>)
             }

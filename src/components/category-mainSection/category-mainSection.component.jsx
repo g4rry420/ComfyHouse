@@ -1,10 +1,12 @@
-import React from 'react'
+import React,{ useContext } from 'react'
 
 import "./category-mainSection.styles.css"
 import MainSectionSideHeading from '../mainSection-side-Heading/mainSection-side-Heading.component'
 import MainSectionItems from '../mainSection-Items/mainSection-Items.component'
+import { ShopProductsContext } from "../../context/shopProducts/shopProductsContext"
 
 function CategoryMainSection({ state }) {
+    const { objectsToArray,sortFunction } = useContext(ShopProductsContext)
     return (
         <div>
             <div className="margin-in-mainSection my-5">
@@ -13,7 +15,7 @@ function CategoryMainSection({ state }) {
                         <div className="row">
                         {
                             state !== undefined ?
-                                state.items.map((item) => {
+                                objectsToArray(state.items).sort(sortFunction()).map((item) => {
                                     return(
                                         <MainSectionSideHeading key={item.id} item={item} /> 
                                     )
@@ -27,8 +29,8 @@ function CategoryMainSection({ state }) {
                         <div className="row">
                         {
                             state !== undefined ?
-                                state.items.map(item => {
-                                return item.items.filter((item, idx) => idx < 6 ).map(ite => (
+                                objectsToArray(state.items).sort(sortFunction()).map(item => {
+                                return objectsToArray(item.items).sort(sortFunction()).filter((item, idx) => idx < 6 ).map(ite => (
                                     
                                     <MainSectionItems key={ite.id} item={ite} />
                                 ))}) :

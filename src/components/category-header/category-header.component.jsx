@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { withRouter } from "react-router-dom"
 
 import "./category-header.styles.css"
 import CategoryLinks from '../category-links/category-links.component'
+import { ShopProductsContext } from "../../context/shopProducts/shopProductsContext"
 
 function CategoryHeader({ state }) {
+    const { objectsToArray,sortFunction } = useContext(ShopProductsContext);
     return (
         <div className="container-fluid background-for-category py-4">
             <div className="container">
@@ -14,7 +16,7 @@ function CategoryHeader({ state }) {
                         <div className="row">
                             {
                                 state !== undefined ?
-                                    state.items.map(item => (
+                                objectsToArray(state.items).sort(sortFunction()).map(item => (
                                         <CategoryLinks key={item.id} item={item} /> 
                                     )) :
                                         null

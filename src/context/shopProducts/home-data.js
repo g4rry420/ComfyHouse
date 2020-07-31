@@ -1,23 +1,23 @@
-const shopByDepartment = [
-    { 
+const shopByDepartment = {
+    furniture: { 
         id: 1,
         title: "Furniture",
         routeName: "furniture",
         bigImageUrl: "https://secure.img1-fg.wfcdn.com/im/36125534/resize-h146-w146%5Ecompr-r85%5Etransparent/9847/98477101/default_name.png",
         smallImageUrl: "https://secure.img1-fg.wfcdn.com/im/75759767/timg-h40-w40%5Ecompr-r85%5Etransparent/9847/98477101/default_name.png",
         mainImage: "https://secure.img1-fg.wfcdn.com/im/85067821/resize-h500-w500%5Ecompr-r85%5Etransparent/1148/114856311/default_name.png",
-        items: [
-            {
+        items: {
+            livingRoomFurniture:{
                 id: 11,
                 title: "Living Room Furniture",
-                items: [
-                    {
+                items: {
+                    sofas:{
                         id: 111,
                         title: "Sofas",
                         routeName: "sofas",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/53731153/resize-h110-w110%5Ecompr-r85%5Etransparent/8140/81409053/default_name.png",
-                        items: [
-                            {
+                        items: {
+                            corwinConvertibleSleeper:{
                                 id: 1111,
                                 title: "Corwin Convertible Sleeper",
                                 price: 316.99,
@@ -82,7 +82,7 @@ const shopByDepartment = [
                                     }
                                 ]
                             },
-                            {
+                            nicklesVelvet:{
                                 id: 1112,
                                 title: "Nickles Velvet 52.36\" Armless Loveseat",
                                 price: 639.99,
@@ -146,7 +146,7 @@ const shopByDepartment = [
                                     }
                                 ]
                             },
-                            {
+                            lewellenVelvet71:{
                                 id: 1113,
                                 title: "Lewellen Velvet 71.6\" Square Arm Sofa",
                                 price: 469.99,
@@ -210,7 +210,7 @@ const shopByDepartment = [
                                     }
                                 ]
                             },
-                            {
+                            quinonesChesterfield:{
                                 id: 1114,
                                 title: "Quinones Chesterfield 54\" Rolled Arms Loveseat",
                                 price: 559.99,
@@ -274,7 +274,7 @@ const shopByDepartment = [
                                     }
                                 ]
                             },
-                            {
+                            lewellenVelvet58:{
                                 id: 1115,
                                 title: "Lewellen Velvet 58\" Square Arm Loveseat",
                                 price: 409.99,
@@ -331,7 +331,7 @@ const shopByDepartment = [
                                     }
                                 ]
                             },
-                            {
+                            ibizaMicrofiber80:{
                                 id: 1116,
                                 title: "Ibiza Microfiber 80.3\" Flared Arm Sofa",
                                 price: 599.99,
@@ -396,7 +396,7 @@ const shopByDepartment = [
                                     }
                                 ]
                             },
-                            {
+                            minter89:{
                                 id: 1117,
                                 title: "Minter 89\" Pillow Top Arm Sofa Bed",
                                 price: 609.99,
@@ -460,7 +460,7 @@ const shopByDepartment = [
                                     }
                                 ]
                             },
-                            {
+                            bantonStandard52:{
                                 id: 1118,
                                 title: "Banton Standard 52.36\" Armless Loveseat",
                                 price: 649.99,
@@ -524,7 +524,7 @@ const shopByDepartment = [
                                     }
                                 ]
                             },
-                            {
+                            ibizaLoveseat:{
                                 id: 1119,
                                 title: "Ibiza Loveseat",
                                 price: 399.99,
@@ -589,7 +589,7 @@ const shopByDepartment = [
                                     }
                                 ]
                             },
-                            {
+                            niaVelvet81:{
                                 id: 1120,
                                 title: "Nia Velvet 81.5\" Square Arm Sleeper",
                                 price: 739.99,
@@ -653,15 +653,15 @@ const shopByDepartment = [
                                     }
                                 ]
                             },
-                        ]
+                        }
                     },
-                    {
+                    sectionals: {
                         id: 112,
                         title: "Sectionals",
                         routeName: "sectionals",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/19678414/resize-h110-w110%5Ecompr-r85%5Etransparent/8140/81409056/default_name.png",
-                        items: [
-                            {
+                        items: {
+                            isaacs112:{
                                 id: 1121,
                                 title: "Isaacs 112\" Left Hand Facing Sectional",
                                 price: 1499.99,
@@ -728,7 +728,7 @@ const shopByDepartment = [
                                     }
                                 ]
                             },
-                            {
+                            kayden84:{
                                 id: 1122,
                                 title: "Kayden 84\" Chenille Reversible Sleeper Sofa & Chaise",
                                 price: 1199.99,
@@ -812,7 +812,7 @@ const shopByDepartment = [
                                     }
                                 ]
                             },
-                            {
+                            baldy90:{
                                 id: 1123,
                                 title: "Baldy 90\" Right Hand Facing Sofa & Chaise",
                                 price: 1219.99,
@@ -870,7 +870,7 @@ const shopByDepartment = [
                                     }
                                 ]
                             },
-                            {
+                            hendrick88:{
                                 id: 1124,
                                 title: "Hendrick 88.6\" Pull Out Reversible Sleeper Sectional",
                                 price: 1279.99,
@@ -938,7 +938,7 @@ const shopByDepartment = [
                                     }
                                 ]
                             },
-                            {
+                            althea134:{
                                 id: 1125,
                                 title: "Althea 134\" Left Hand Facing Modular Sectional",
                                 price: 1769.99,
@@ -1000,7 +1000,7 @@ const shopByDepartment = [
                                     }
                                 ]
                             },
-                            {
+                            galenaLeftHandFacingSectional:{
                                 id: 1126,
                                 title: "Galena Left Hand Facing Sectional",
                                 price: 1459.99,
@@ -1050,7 +1050,7 @@ const shopByDepartment = [
                                     }
                                 ]
                             },
-                            {
+                            leftHandFacingLargeSectional150:{
                                 id: 1127,
                                 title: "150\" Left Hand Facing Large Sectional",
                                 price: 2579.99,
@@ -1086,7 +1086,7 @@ const shopByDepartment = [
                                     }
                                 ]
                             },
-                            {
+                            gerrald124:{
                                 id: 1128,
                                 title: "Gerrald 124\" Sectional",
                                 price: 2129.99,
@@ -1139,7 +1139,7 @@ const shopByDepartment = [
                                     }
                                 ]
                             },
-                            {
+                            perrault130:{
                                 id: 1129,
                                 title: "Perrault 130\" Right Hand Facing Sectional",
                                 price: 1699.99,
@@ -1184,7 +1184,7 @@ const shopByDepartment = [
                                     }
                                 ]
                             },
-                            {
+                            russ103:{
                                 id: 1130,
                                 title: "Russ 103.5\" Sectional",
                                 price: 1169.99,
@@ -1245,564 +1245,564 @@ const shopByDepartment = [
                                     }
                                 ]
                             }
-                        ]
+                        }
                     },
-                    {
+                    loveseats:{
                         id: 113,
                         title: "Loveseats",
                         routeName: "loveseats",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/71285332/resize-h110-w110%5Ecompr-r85%5Etransparent/8140/81409069/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    livingRoomSets:{
                         id: 114,
                         title: "Living Room Sets",
                         routeName: "livingRoomSets",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/27182219/resize-h110-w110%5Ecompr-r85%5Etransparent/8140/81409037/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    chairsAndRecliners:{
                         id: 115,
                         title: "Chairs & Recliners",
                         routeName: "chairs&Recliners",
                         imageUrl: 'https://secure.img1-fg.wfcdn.com/im/19171847/resize-h110-w110%5Ecompr-r85%5Etransparent/3882/38820157/default_name.png',
-                        items: []
+                        items: {}
                     },
-                    {
+                    accentChairs:{
                         id: 116,
                         title: "Accent Chairs",
                         routeName: "accentChairs",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/13948771/resize-h110-w110%5Ecompr-r85%5Etransparent/9988/99885278/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    coffeeTables:{
                         id: 117,
                         title: "Coffee Tables",
                         routeName: "coffeeTables",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/67744998/resize-h110-w110%5Ecompr-r85%5Etransparent/7295/72951825/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    ottomansAndPoufs:{
                         id: 118,
                         title: "Ottomans & Poufs",
                         routeName: "ottomans&Poufs",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/19576459/resize-h110-w110%5Ecompr-r85%5Etransparent/2999/29997105/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    endAndSideTables:{
                         id: 119,
                         title: "End & Side Tables",
                         routeName: "end&SideTables",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/19281099/resize-h110-w110%5Ecompr-r85%5Etransparent/3854/38541926/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    consoleAndSofaTables:{
                         id: 120,
                         title: "Console & Sofa Tables",
                         routeName: "console&SofaTables",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/50585187/resize-h110-w110%5Ecompr-r85%5Etransparent/3532/35329666/default_name.png",
-                        items: []
+                        items: {}
                     }
-                ]
+                }
             },
-            {
+            bedroomFurniture:{
                 id: 12,
                 title: "Bedroom Furniture",
-                items: [
-                    {
+                items: {
+                    bedsAndHeadboars:{
                         id: 121,
                         title: "Beds & Headboards",
                         routeName: "beds&Headboars",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/89202144/resize-h110-w110%5Ecompr-r85%5Etransparent/1084/108437109/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    bedroomSets:{
                         id: 122,
                         title: "Bedroom Sets",
                         routeName: "bedroomSets",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/71160439/resize-h110-w110%5Ecompr-r85%5Etransparent/4866/48667733/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    dressers:{
                         id: 123,
                         title: "Dressers",
                         routeName: "dressers",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/65284348/resize-h110-w110%5Ecompr-r85%5Etransparent/8006/80065699/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    nightstands:{
                         id: 124,
                         title: "Nightstands",
                         routeName: "nightstands",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/68279087/resize-h110-w110%5Ecompr-r85%5Etransparent/3613/36138915/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    daybeds:{
                         id: 125,
                         title: "Daybeds",
                         routeName: "daybeds",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/87962076/resize-h110-w110%5Ecompr-r85%5Etransparent/5477/54775049/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    mattresses:{
                         id: 126,
                         title: "Mattresses",
                         routeName: "mattresses",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/86266657/resize-h110-w110%5Ecompr-r85%5Etransparent/5286/52869855/default_name.png",
-                        items: []
+                        items: {}
                     }
-                ]
+                }
             },
-            {
+            kitchenAndDiningFurniture:{
                 id: 13,
                 title: "Kitchen & Dining Furniture",
-                items: [
-                    {
+                items: {
+                    diningTablesAndSeating:{
                         id: 131,
                         title: "Dining Tables & Seating",
                         routeName: "diningTables&Seating",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/98962866/resize-h110-w110%5Ecompr-r85%5Etransparent/1674/16741408/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    barFurniture:{
                         id: 132,
                         title: "Bar Furniture",
                         routeName: "barFurniture",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/93125115/resize-h110-w110%5Ecompr-r85%5Etransparent/1022/10226975/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    kitchenIslandsAndCarts:{
                         id: 133,
                         title: "Kitchen Islands & Carts",
                         routeName: "kitchenIslands&Carts",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/79944351/resize-h110-w110%5Ecompr-r85%5Etransparent/1000/10009776/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    sideboardsAndBuffets:{
                         id: 134,
                         title: "Sideboards & Buffets",
                         routeName: "sideboards&Buffets",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/85705309/resize-h110-w110%5Ecompr-r85%5Etransparent/1530/15307521/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    displayAndChinaCabinets:{
                         id: 135,
                         title: "Display & China Cabinets",
                         routeName: "display&ChinaCabinets",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/57192837/resize-h110-w110%5Ecompr-r85%5Etransparent/8731/8731948/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    bakerRacks:{
                         id: 136,
                         title: "Baker Racks",
                         routeName: "bakerRacks",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/70383531/resize-h110-w110%5Ecompr-r85%5Etransparent/1384/13845937/default_name.png",
-                        items: []
+                        items: {}
                     }
-                ]
+                }
             },
-            {
+            accentFurniture:{
                 id: 14,
                 title: "Accent Furniture",
-                items: [
-                    {
+                items: {
+                    accentChairs:{
                         id: 141,
                         title: "Accent Chairs",
                         routeName: "accentChairs",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/13948771/resize-h110-w110%5Ecompr-r85%5Etransparent/9988/99885278/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    accentTables:{
                         id: 142,
                         title: "Accent Tables",
                         routeName: "accentTables",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/70674211/resize-h110-w110%5Ecompr-r85%5Etransparent/4585/45850352/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    cabinetsAndChests:{
                         id: 143,
                         title: "Cabinets & Chests",
                         routeName: "cabinets&Chests",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/67811311/resize-h110-w110%5Ecompr-r85%5Etransparent/3499/34991868/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    blanketsLaddersAndRacks:{
                         id: 144,
                         title: "Blankets Ladders & Racks",
                         routeName: "blanketsLadders&Racks",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/88929025/resize-h110-w110%5Ecompr-r85%5Etransparent/3643/36436570/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    benches:{
                         id: 145,
                         title: "Benches",
                         routeName: "benches",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/80501673/resize-h110-w110%5Ecompr-r85%5Etransparent/4486/44862437/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    ottomonsAndPoufs:{
                         id: 146,
                         title: "Ottomons & Poufs",
                         routeName: "ottomons&Poufs",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/19576459/resize-h110-w110%5Ecompr-r85%5Etransparent/2999/29997105/default_name.png",
-                        items: []
+                        items: {}
                     }
-                ]
+                }
             },
-            {
+            officeFurniture:{
                 id: 15,
                 title: "Office Furniture",
-                items: [
-                    {
+                items: {
+                    desks:{
                         id: 151,
                         title: "Desks",
                         routeName: "desks",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/39146905/resize-h110-w110%5Ecompr-r85%5Etransparent/3267/32671179/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    officeChairsAndSeating:{
                         id: 152,
                         title: "Office Chairs & Seating",
                         routeName: "officeChairs&Seating",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/67935120/resize-h110-w110%5Ecompr-r85%5Etransparent/1019/10198408/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    officeSets:{
                         id: 153,
                         title: "Office Sets",
                         routeName: "officeSets",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/92193961/resize-h110-w110%5Ecompr-r85%5Etransparent/3821/38219119/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    bookcases:{
                         id: 154,
                         title: "Bookcases",
                         routeName: "bookcases",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/57946603/resize-h110-w110%5Ecompr-r85%5Etransparent/4750/47500448/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    fillingCabinets:{
                         id: 155,
                         title: "Filling Cabinets",
                         routeName: "fillingCabinets",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/28617184/resize-h110-w110%5Ecompr-r85%5Etransparent/6435/6435803/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    officeStorageCabinets:{
                         id: 156,
                         title: "Office Storage Cabinets",
                         routeName: "officeStorageCabinets",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/62703610/resize-h110-w110%5Ecompr-r85%5Etransparent/4317/43177168/default_name.png",
-                        items: []
+                        items: {}
                     }
-                ]
+                }
             },
-            {
+            entryAndMudroomFurniture:{
                 id: 16,
                 title: "Entry & Mudroom Furniture",
-                items: [
-                    {
+                items: {
+                    consoleAndSofaTables:{
                         id: 161,
                         title: "Console & Sofa Tables",
                         routeName: "console&SofaTables",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/50585187/resize-h110-w110%5Ecompr-r85%5Etransparent/3532/35329666/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    cabinetsAndChests:{
                         id: 162,
                         title: "Cabinets & Chests",
                         routeName: "cabinets&Chests",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/67811311/resize-h110-w110%5Ecompr-r85%5Etransparent/3499/34991868/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    hallTrees:{
                         id: 163,
                         title: "Hall Trees",
                         routeName: "hallTrees",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/73514291/resize-h110-w110%5Ecompr-r85%5Etransparent/3348/33480428/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    storageBenches:{
                         id: 164,
                         title: "Storage Benches",
                         routeName: "storageBenches",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/43159718/resize-h110-w110%5Ecompr-r85%5Etransparent/5637/56379049/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    entrywayBenches:{
                         id: 165,
                         title: "Entryway Benches",
                         routeName: "entrywayBenches",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/00709381/resize-h110-w110%5Ecompr-r85/2647/26473347/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    shoeStorage:{
                         id: 166,
                         title: "Shoe Storage",
                         routeName: "shoeStorage",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/4548617/resize-h110-w110%5Ecompr-r85%5Etransparent/1532/15323752/default_name.png",
-                        items: []
+                        items: {}
                     }
-                ]
+                }
             },
-            {
+            outdoorAndPatioFurniture:{
                 id: 17,
                 title: "Outdoor & Patio Furniture",
-                items: [
-                    {
+                items: {
+                    patioFurnitureSets:{
                         id: 171,
                         title: "Patio Furniture Sets",
                         routeName: "patioFurnitureSets",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/08154195/resize-h110-w110%5Ecompr-r85%5Etransparent/2937/29372681/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    outdoorSeatingAndPatioChairs:{
                         id: 172,
                         title: "Outdoor Seating & Patio Chairs",
                         routeName: "outdoorSeating&PatioChairs",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/77103559/resize-h110-w110%5Ecompr-r85%5Etransparent/9503/95031620/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    patioTables:{
                         id: 173,
                         title: "Patio Tables",
                         routeName: "patioTables",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/47324948/resize-h110-w110%5Ecompr-r85%5Etransparent/1000/100007401/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    smallSpacePatioFurniture:{
                         id: 174,
                         title: "Small Space Patio Furniture",
                         routeName: "smallSpacePatioFurniture",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/48080216/resize-h110-w110%5Ecompr-r85%5Etransparent/7433/74339120/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    patioBarFurniture:{
                         id: 175,
                         title: "Patio Bar Furniture",
                         routeName: "patioBarFurniture",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/86230395/resize-h110-w110%5Ecompr-r85%5Etransparent/3324/33246851/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    outdoorUmbrellas:{
                         id: 176,
                         title: "Outdoor Umbrellas",
                         routeName: "outdoorUmbrellas",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/14360232/resize-h110-w110%5Ecompr-r85%5Etransparent/2792/27926506/default_name.png",
-                        items: []
+                        items: {}
                     }
-                ]
+                }
             },
-            {
+            bathroomFurniture:{
                 id: 18,
                 title: "Bathroom Furniture",
-                items: [
-                    {
+                items: {
+                    bathroomVanities:{
                         id: 181,
                         title: "Bathroom Vanities",
                         routeName: "bathroomVanities",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/13859642/resize-h110-w110%5Ecompr-r85%5Etransparent/4216/42167764/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    bathroomCabinetsAndShelving:{
                         id: 182,
                         title: "Bathroom Cabinets & Shelving",
                         routeName: "bathroomCabinets&Shelving",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/82069439/resize-h110-w110%5Ecompr-r85%5Etransparent/1001/10011041/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    medicineCabinets:{
                         id: 183,
                         title: "Medicine Cabinets",
                         routeName: "medicineCabinets",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/84213406/resize-h110-w110%5Ecompr-r85%5Etransparent/1250/12506777/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    smallSpaceBathroom:{
                         id: 184,
                         title: "Small Space Bathroom",
                         routeName: "smallSpaceBathroom",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/93521301/resize-h110-w110%5Ecompr-r85%5Etransparent/2668/26682178/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    emptyOne:{
                         id: 185,
                         title: "",
                         routeName: "",
                         imageUrl: "",
-                        items: []
+                        items: {}
                     },
-                    {
+                    emptyTwo:{
                         id: 186,
                         title: "",
                         routeName: "",
                         imageUrl: "",
-                        items: []
+                        items: {}
                     }
-                ]
+                }
             },
-            {
+            babyAndKidsFurniture:{
                 id: 19,
                 title: "Baby & Kids Furniture",
-                items: [
-                    {
+                items: {
+                    playroom:{
                         id: 191,
                         title: "Playroom",
                         routeName: "playroom",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/62136436/resize-h110-w110%5Ecompr-r85%5Etransparent/6907/69072018/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    kidsBedroomFurniture:{
                         id: 192,
                         title: "Kids Bedroom Furniture",
                         routeName: "kidsBedroomFurniture",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/96407395/resize-h110-w110%5Ecompr-r85%5Etransparent/4316/43165054/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    nurseryFurniture:{
                         id: 193,
                         title: "Nursery Furniture",
                         routeName: "nurseryFurniture",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/36392005/resize-h110-w110%5Ecompr-r85%5Etransparent/3111/31111993/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    babyAndToddlerPlay:{
                         id: 194,
                         title: "Baby & Toddler Play",
                         routeName: "baby&ToddlerPlay",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/35831488/resize-h110-w110%5Ecompr-r85%5Etransparent/5313/53131370/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    teenBedroomFurniture:{
                         id: 195,
                         title: "Teen Bedroom Furniture",
                         routeName: "teenBedroomFurniture",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/94560442/resize-h110-w110%5Ecompr-r85%5Etransparent/2992/29921860/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    teenLoungeFurniture:{
                         id: 196,
                         title: "Teen Lounge Furniture",
                         routeName: "teenLoungeFurniture",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/33520057/resize-h110-w110%5Ecompr-r85%5Etransparent/6024/60247175/default_name.png",
-                        items: []
+                        items: {}
                     },
-                ]
+                }
             },
-            {
+            gameRoomFurniture:{
                 id: 20,
                 title: "Game Room Furniture",
-                items: [
-                    {
+                items: {
+                    poolTablesAndAccessories:{
                         id: 201,
                         title: "Pool Tables & Accessories",
                         routeName: "poolTables&Accessories",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/18133520/resize-h110-w110%5Ecompr-r85%5Etransparent/2979/29792235/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    pokerTablesAndAccessories:{
                         id: 202,
                         title: "Poker Tables & Accessories",
                         routeName: "pokerTables&Accessories",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/98551752/resize-h110-w110%5Ecompr-r85%5Etransparent/3112/31129717/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    shuffleboard:{
                         id: 203,
                         title: "Shuffleboard",
                         routeName: "shuffleboard",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/48616508/resize-h110-w110%5Ecompr-r85%5Etransparent/6665/6665853/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    tableTennisTablesAndAccessories:{
                         id: 204,
                         title: "Table Tennis Tables & Accessories",
                         routeName: "tableTennisTables&Accessories",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/98602412/resize-h110-w110%5Ecompr-r85%5Etransparent/3138/31384998/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    multiGameTables:{
                         id: 205,
                         title: "Multi Game Tables",
                         routeName: "multiGameTables",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/98146834/resize-h110-w110%5Ecompr-r85%5Etransparent/2982/29823719/default_name.png",
-                        items: []
+                        items: {}
                     },
-                    {
+                    classicGameTables:{
                         id: 206,
                         title: "Classic Game Tables",
                         routeName: "classicGameTables",
                         imageUrl: "https://secure.img1-fg.wfcdn.com/im/96771142/resize-h110-w110%5Ecompr-r85%5Etransparent/5609/5609160/default_name.png",
-                        items: []
+                        items: {}
                     },
-                ]
+                }
             }
-        ]
+        }
     },
-    {
+    outdoor: {
         id: 2,
         title: "Outdoor",
         routeName: "outdoor",
         bigImageUrl: "https://secure.img1-fg.wfcdn.com/im/94725432/resize-h146-w146%5Ecompr-r85%5Etransparent/9847/98477118/default_name.png",
         smallImageUrl: "https://secure.img1-fg.wfcdn.com/im/60607631/timg-h40-w40%5Ecompr-r85%5Etransparent/9847/98477118/default_name.png",
-        items: []
+        items: {}
     },
-    {
+    decorAndPillows: {
         id: 3,
         title: "Decor & Pillows",
         routeName: "decorAndPillows",
         bigImageUrl: "https://secure.img1-fg.wfcdn.com/im/98123780/resize-h146-w146%5Ecompr-r85%5Etransparent/9847/98477095/default_name.png",
         smallImageUrl: "https://secure.img1-fg.wfcdn.com/im/57209283/timg-h40-w40%5Ecompr-r85%5Etransparent/9847/98477095/default_name.png",
-        items: []
+        items: {}
     },
-    {
+    rugs: {
         id: 4,
         title: "Rugs",
         routeName: "rugs",
         bigImageUrl: "https://secure.img1-fg.wfcdn.com/im/17270816/resize-h146-w146%5Ecompr-r85%5Etransparent/9847/98477121/default_name.png",
         smallImageUrl: "https://secure.img1-fg.wfcdn.com/im/56905049/timg-h40-w40%5Ecompr-r85%5Etransparent/9847/98477121/default_name.png",
-        items: []
+        items: {}
     },
-    {
+    ligtning: {
         id: 5,
         title: "Lightning",
         routeName: "lightning",
         bigImageUrl: "https://secure.img1-fg.wfcdn.com/im/28778171/resize-h146-w146%5Ecompr-r85%5Etransparent/9847/98477115/default_name.png",
         smallImageUrl: "https://secure.img1-fg.wfcdn.com/im/26554892/timg-h40-w40%5Ecompr-r85%5Etransparent/9847/98477115/default_name.png",
-        items: []
+        items: {}
     },
-    {
+    renovation :{
         id: 6,
         title: "Renovation",
         routeName: "renovation",
         bigImageUrl: "https://secure.img1-fg.wfcdn.com/im/43330857/resize-h146-w146%5Ecompr-r85%5Etransparent/9847/98477108/default_name.png",
         smallImageUrl: "https://secure.img1-fg.wfcdn.com/im/96303376/timg-h40-w40%5Ecompr-r85%5Etransparent/9847/98477108/default_name.png",
-        items: []
+        items: {}
     },
-    {
+    kitchen :{
         id: 7,
         title: "Kitchen",
         routeName: "kitchen",
         bigImageUrl: "https://secure.img1-fg.wfcdn.com/im/40958777/resize-h146-w146%5Ecompr-r85%5Etransparent/1148/114856328/default_name.png",
         smallImageUrl: "https://secure.img1-fg.wfcdn.com/im/56937810/timg-h40-w40%5Ecompr-r85%5Etransparent/1148/114856328/default_name.png",
-        items: []
+        items: {}
     },
-    {
+    babyAndKids: {
         id: 8,
         title: "Baby & Kids",
         routeName: "babyAndKids",
         bigImageUrl: "https://secure.img1-fg.wfcdn.com/im/71418404/resize-h146-w146%5Ecompr-r85%5Etransparent/9847/98477084/default_name.png",
         smallImageUrl: "https://secure.img1-fg.wfcdn.com/im/11052637/timg-h40-w40%5Ecompr-r85%5Etransparent/9847/98477084/default_name.png",
-        items: []
+        items: {}
     },
-    {
+    storage: {
         id: 9,
         title: "Storage",
         routeName: "storage",
         bigImageUrl: "https://secure.img1-fg.wfcdn.com/im/16781923/resize-h146-w146%5Ecompr-r85%5Etransparent/9847/98477124/default_name.png",
         smallImageUrl: "https://secure.img1-fg.wfcdn.com/im/22852310/timg-h40-w40%5Ecompr-r85%5Etransparent/9847/98477124/default_name.png",
-        items: []
+        items: {}
     }
-]
+}
 
 export default shopByDepartment

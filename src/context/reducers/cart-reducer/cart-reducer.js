@@ -1,5 +1,4 @@
 export const cartReducer = (state, action) => {
-    console.log(action)
     switch(action.type) {
         case "ADD_ITEM_TO_CART":
             if(!state.map(item => item.id).includes(action.product.id)){

@@ -40,6 +40,38 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
     return userRef;
 }
 
+export const addShopProuctsAndItems = async (shopProductsKey, objectsToAdd) => {
+    const collectionRef = firestore.collection(shopProductsKey);
+
+    const batch = firestore.batch();
+    objectsToAdd.forEach(obj => {
+        const newDocRef = collectionRef.doc();
+        batch.set(newDocRef, obj);
+    })
+
+    return await batch.commit()
+}
+
+export const convertShopProductsSnapshotToMap = (shopProducts) => {
+    const transformedProducts = shopProducts.docs.map(doc => {
+    const { bigImageUrl, smallImageUrl,mainImage, items, title,routeName } = doc.data();
+        return{
+            id: doc.id,
+            bigImageUrl,
+            smallImageUrl,
+            mainImage,
+            items,
+            title,
+            routeName
+        } 
+    })
+
+    return transformedProducts.reduce((accumulator, shopProducts) => {
+        accumulator[shopProducts.title.trim().toLowerCase()] = shopProducts;
+        return accumulator;
+    }, {})
+}
+
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 

@@ -21,10 +21,6 @@
     font-size: 18px;
     margin: 101px auto;
 }
-.cart-dropdown-button{
-    margin-left: -103%;
-    margin-top: 7%;
-}
 .cart-dropdown-button div{
    padding: 0 !important;
    font-weight: 600;

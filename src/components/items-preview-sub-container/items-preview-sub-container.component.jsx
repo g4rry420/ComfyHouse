@@ -1,16 +1,9 @@
-import React,{useContext} from 'react'
+import React from 'react'
 
 import ItemsPreview from '../../components/items-preview/items-preview.component'
 import Heading from "../Heading/heading.component"
-import { ShopProductsContext } from "../../context/shopProducts/shopProductsContext"
 
-export default function ItemPreviewSubContainer({match, location: {state}}) {
-
-    // const { products } = useContext(ShopProductsContext)
-    // const itemPreviewContainer = 
-    //     products.find(({routeName}) => routeName === match.params.particularDepartment)
-    //         .items.find(({id}) => id).items.find(({routeName}) => routeName === match.params.itemPreview)
-
+export default function ItemPreviewSubContainer({ location: {state}}) {
     return (
         <div>
             <Heading 

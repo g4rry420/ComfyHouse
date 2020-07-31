@@ -23,7 +23,7 @@ function CartDropdown({ history }) {
                 history.push("/checkout");
                 setCartHidden(!cartHidden);
             }}>
-                <CustomButton title="Go to checkout page" button="cart-dropdown-button" />
+                <CustomButton title="Go&nbsp;to&nbsp;checkout&nbsp;page" button="cart-dropdown-button" />
             </div>
         </div>
     )

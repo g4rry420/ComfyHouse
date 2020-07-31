@@ -12,7 +12,7 @@ export default function LoginAndSignupPage() {
                     <LogIn />
                 </div>
 
-                <div className="col-md-5 ml-5">
+                <div className="col-md-5 ml-5 signup-container-in-mainPage">
                     <SignUp />
                 </div>
             </div>

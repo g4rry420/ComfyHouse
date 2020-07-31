@@ -7,7 +7,6 @@ function DepartmentItem(props) {
     const { bigImageUrl, title, routeName,mainImage, items } = props;
     return (
         <div className="col-md-3 col-12 my-4">
-
             <Link to={{pathname:`${routeName}`, state:{mainImage, title, items} }} className="link">
                 <div className="department-product">
                     <div className="img-container text-center">

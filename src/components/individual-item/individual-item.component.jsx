@@ -1,23 +1,15 @@
-import React, {useContext, useState, useRef, useEffect} from 'react'
+import React, { useState, useRef, useEffect} from 'react'
 import { v4 as uuidv4 } from "uuid"
 
 import "./individual-item.styles.css"
-import { ShopProductsContext } from "../../context/shopProducts/shopProductsContext"
 import IndividualItemRightSide from '../individual-item-right-side/individual-item-right-side.component';
 import ProductDetails from '../product-details/product-details.component';
 import ArrowImageRight from '../arrow-image-right/arrow-image-right.component';
 import ArrowImageLeft from '../arrow-image-left/arrow-image-left.component';
 
 
-export default function IndividualItem({ match, location: {state} }) {
+export default function IndividualItem({ location: {state} }) {
     let countForArrow = 0;
-    const { products, dispatch } = useContext(ShopProductsContext)
-    // const individualItem = 
-    //     products.find(({routeName}) => routeName === match.params.particularDepartment)
-    //         .items.find(({id}) => id).items.find(({routeName}) => routeName === match.params.itemPreview)
-    //         .items.find(({id}) => id.toString() === match.params.id)
-    
-    // const state = individualItem
     const [largeImage, setLargeImage] = useState([{
         id: state.item[0].id,
         largeImage: state.item[0].largeImage1

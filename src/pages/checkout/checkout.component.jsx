@@ -1,11 +1,18 @@
 import React, { useContext } from 'react'
+import { Redirect } from "react-router-dom"
 
 import "./checkout.styles.css"
 import { ShopProductsContext } from "../../context/shopProducts/shopProductsContext"
 import CheckoutItem from '../../components/checkout-item/checkout-item.component';
+import StripeCheckoutButton from '../../components/stripe-button/stripe-button.componenet';
 
 function CheckoutPage() {
-    const { cart } = useContext(ShopProductsContext);
+    const { cart, currentUser } = useContext(ShopProductsContext);
+    if(!currentUser) return <Redirect to="/loginorsignup" />
+
+    let total = cart.reduce((accQty, item) => {
+        return (accQty + (item.qty * item.price));
+            }, 0)
     return (
         <div className="checkout-page">
             <div className="checkout-header">
@@ -32,9 +39,15 @@ function CheckoutPage() {
             }
 
             <div className="total">
-                <span className="text-uppercase">Total: ${cart.reduce((accQty, item) => {
-                    return (accQty + item.qty * item.price).toFixed(2);
-                }, 0)} </span>
+                <span className="text-uppercase">Total: ${total} </span>
+            </div>
+            <div className="test-warning text-danger my-2">
+                *Please use the following test credit card for payments*
+                <br/>
+                4242 4242 4242 4242 - Exp: 01/22 - CVV: 123
+            </div>
+            <div className="my-4 text-right">
+                <StripeCheckoutButton price={total}  />
             </div>
         </div>
     )
