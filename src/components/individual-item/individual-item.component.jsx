@@ -11,8 +11,8 @@ import ArrowImageLeft from '../arrow-image-left/arrow-image-left.component';
 let countForArrow = 0;
 
 const imageVariant = {
-    exit:{ zIndex: 0, x: "-10vw", opacity: 0},
-    secondExit:{zIndex: 0, x: "10vw", opacity: 0}
+    exit:{ x: "-100vw", opacity: 0},
+    secondExit:{ x: "100vw", opacity: 0}
 }
 
 export default function IndividualItem({ location: {state} }) {
@@ -55,6 +55,7 @@ export default function IndividualItem({ location: {state} }) {
     }
 
     const arrowImageLeft = () => {
+        
         if(countForArrow > 0){
             let mainImage = state.item[0].largeImage[countForArrow-=1]
 
@@ -71,6 +72,7 @@ export default function IndividualItem({ location: {state} }) {
     }
 
     const arrowImageRight = () => {
+        
         if(countForArrow < state.item[0].largeImage.length - 1){
             let mainImage = state.item[0].largeImage[countForArrow+=1]
 
@@ -97,11 +99,12 @@ export default function IndividualItem({ location: {state} }) {
                             <ArrowImageLeft arrowImageLeft={arrowImageLeft} />
                             <AnimatePresence >
                                 { largeImage.map((img, i) => (
-                                            <motion.img 
+                                            <motion.img
                                                 variants={imageVariant}
-                                                animate={{zIndex: 1, x: 0,  opacity: 1}}
+                                                animate={{ x: 0,  opacity: 1}}
                                                 exit={imageAnime ? "exit" : "secondExit"}
                                                 transition={{ duration: 0.5 }}
+                                                layout="position"
                                             ref={el => largeImageRef.current[i] = el} key={img.id} id={img.id} src={img.largeImage} alt="large product"/>
                                         ))}
                             </AnimatePresence>
