@@ -11,7 +11,6 @@ import { firestore,convertShopProductsSnapshotToMap } from "./firebase/firebase.
 import { updateShopProducts } from "./context/reducers/products-reducer/products-actions"
 import WithSpinner from "./components/with-spinner/with-spinner.component"
 import { ShopProductsContext } from "./context/shopProducts/shopProductsContext"
-import TodoList from "./components/zz/zz.component"
 
 function App() {
   const [loading ,setLoading] = useState(true);
@@ -25,7 +24,7 @@ function App() {
             updateShopProducts(dispatchProducts, shopProductsMap);
             setLoading(false);
         })
-    },[])
+    },[dispatchProducts])
  
   return (
     <div className="App mb-5">
@@ -36,7 +35,7 @@ function App() {
         <Route exact path="/loginorsignup" component={LoginAndSignupPage} />
         <Route path={`/:particularDepartment`} component={SubDepartment} />
       </Switch>
-      <TodoList/>
+      
     </div>
   );
 }

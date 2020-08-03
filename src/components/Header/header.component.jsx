@@ -1,5 +1,5 @@
 import React, { useContext, useRef } from 'react'
-import { NavLink, Link } from "react-router-dom"
+import { NavLink, Link, withRouter } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import "./header.styles.css"
@@ -9,7 +9,7 @@ import CartDropdown from "../cart-dropdown/cart-dropdown.component"
 import { ShopProductsContext } from "../../context/shopProducts/shopProductsContext"
 import { auth } from "../../firebase/firebase.utils.js"
 
-function Header() {
+function Header({ location }) {
     const { cartHidden, currentUser } = useContext(ShopProductsContext);
     const toggleNavbar = useRef();
     const navbar = (e) => {
@@ -36,7 +36,7 @@ function Header() {
                             currentUser ? 
                             (<li onClick={() => auth.signOut() } className=" sign-out">SignOut</li>)
                             : 
-                            (<li className="list-menu "><NavLink exact to="/loginorsignup" className="icon-link icon-2">SignUp</NavLink></li>)
+                            (<li className="list-menu "><NavLink exact to={{ pathname: "/loginorsignup", state: { previousPath: location.pathname } }}  className="icon-link icon-2">SignUp</NavLink></li>)
                         }
                             
                         </ul>
@@ -51,7 +51,7 @@ function Header() {
                     auth.signOut()
                 }} className="list-menu-desktop sign-out">SignOut</li>)
                 : 
-                (<li className="list-menu-desktop"><NavLink exact to="/loginorsignup" className="icon-link icon-2">SignUp</NavLink></li>)
+                (<li className="list-menu-desktop"><NavLink exact to={{ pathname: "/loginorsignup", state: { previousPath: location.pathname } }} className="icon-link icon-2">SignUp</NavLink></li>)
             }
 
                 
@@ -66,4 +66,4 @@ function Header() {
     )
 }
 
-export default Header
+export default withRouter(Header)

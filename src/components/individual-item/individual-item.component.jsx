@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect} from 'react'
 import { v4 as uuidv4 } from "uuid"
+import { motion, AnimatePresence } from "framer-motion"
 
 import "./individual-item.styles.css"
 import IndividualItemRightSide from '../individual-item-right-side/individual-item-right-side.component';
@@ -7,13 +8,21 @@ import ProductDetails from '../product-details/product-details.component';
 import ArrowImageRight from '../arrow-image-right/arrow-image-right.component';
 import ArrowImageLeft from '../arrow-image-left/arrow-image-left.component';
 
+let countForArrow = 0;
+
+const imageVariant = {
+    exit:{ zIndex: 0, x: "-10vw", opacity: 0},
+    secondExit:{zIndex: 0, x: "10vw", opacity: 0}
+}
 
 export default function IndividualItem({ location: {state} }) {
-    let countForArrow = 0;
+    
     const [largeImage, setLargeImage] = useState([{
         id: state.item[0].id,
         largeImage: state.item[0].largeImage1
     }])
+    const [imageAnime, setImageAnime] = useState(true);
+
     const [smallImage, setSmallImage] = useState(state.item[0].smallImage);
 
     const smallImageRef = useRef();
@@ -50,6 +59,7 @@ export default function IndividualItem({ location: {state} }) {
             let mainImage = state.item[0].largeImage[countForArrow-=1]
 
             if(mainImage !== undefined){
+                setImageAnime(false);
                 setLargeImage([{
                     id: mainImage.id,
                     largeImage: mainImage.largeImage
@@ -65,6 +75,7 @@ export default function IndividualItem({ location: {state} }) {
             let mainImage = state.item[0].largeImage[countForArrow+=1]
 
             if(mainImage !== undefined){
+                setImageAnime(true);
                 setLargeImage([{
                     id: mainImage.id,
                     largeImage: mainImage.largeImage
@@ -76,7 +87,6 @@ export default function IndividualItem({ location: {state} }) {
 
     } 
 
-
     return ( 
         <div className="containe-fluid">
             <div className="row">
@@ -85,11 +95,16 @@ export default function IndividualItem({ location: {state} }) {
                         <div className="individual-item-big-img-container text-center">
                             
                             <ArrowImageLeft arrowImageLeft={arrowImageLeft} />
-                            
-                            {largeImage.map((img, i) => (
-                                <img ref={el => largeImageRef.current[i] = el} key={img.id} id={img.id} src={img.largeImage} alt="large product"/>
-                            ))}
-
+                            <AnimatePresence >
+                                { largeImage.map((img, i) => (
+                                            <motion.img 
+                                                variants={imageVariant}
+                                                animate={{zIndex: 1, x: 0,  opacity: 1}}
+                                                exit={imageAnime ? "exit" : "secondExit"}
+                                                transition={{ duration: 0.5 }}
+                                            ref={el => largeImageRef.current[i] = el} key={img.id} id={img.id} src={img.largeImage} alt="large product"/>
+                                        ))}
+                            </AnimatePresence>
                             <ArrowImageRight arrowImageRight={arrowImageRight} />
                             
                         </div>

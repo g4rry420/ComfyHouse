@@ -6,9 +6,9 @@ import { ShopProductsContext } from "../../context/shopProducts/shopProductsCont
 import CheckoutItem from '../../components/checkout-item/checkout-item.component';
 import StripeCheckoutButton from '../../components/stripe-button/stripe-button.componenet';
 
-function CheckoutPage() {
+function CheckoutPage({ location }) {
     const { cart, currentUser } = useContext(ShopProductsContext);
-    if(!currentUser) return <Redirect to="/loginorsignup" />
+    if(!currentUser) return <Redirect to={{ pathname: "/loginorsignup", state: { previousPath: location.pathname } }} />
 
     let total = cart.reduce((accQty, item) => {
         return (accQty + (item.qty * item.price));

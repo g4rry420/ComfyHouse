@@ -8,7 +8,7 @@ import FormInput from "../form-input/form-input.component"
 import Heading from "../Heading/heading.component"
 import { ShopProductsContext } from "../../context/shopProducts/shopProductsContext"
 
-export default function LogIn() {
+export default function LogIn({ state }) {
     const { currentUser } = useContext(ShopProductsContext);
 
     const [login, setLogin] = useState({
@@ -34,7 +34,13 @@ export default function LogIn() {
         setLogin({...login, [name]: value});
     }
 
-    if(currentUser) return <Redirect to="/" />
+    if(state.previousPath === "/checkout" && currentUser){
+        return <Redirect to="/checkout" />
+    }else if(state.previousPath === "/" && currentUser) {
+        return <Redirect to="/" />
+    }else if(currentUser) {
+        return <Redirect to="/" />
+    }
 
     const { email, password } = login;
     return (
