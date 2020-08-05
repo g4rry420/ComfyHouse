@@ -1,41 +1,32 @@
-import React,{ useEffect, useContext, useState } from 'react';
+import React,{ lazy, Suspense } from 'react';
 import { Route, Switch } from "react-router-dom";
 
 import './App.css';
-import Homepage from './pages/homepage/homepage.component';
-import SubDepartment from "./pages/sub-department/sub-department.component";
 import Header from './components/Header/header.component'
-import CheckoutPage from "./pages/checkout/checkout.component";
-import LoginAndSignupPage from './pages/login-and-signup/login-and-signup.component';
-import { firestore,convertShopProductsSnapshotToMap } from "./firebase/firebase.utils"
-import { updateShopProducts } from "./context/reducers/products-reducer/products-actions"
-import WithSpinner from "./components/with-spinner/with-spinner.component"
-import { ShopProductsContext } from "./context/shopProducts/shopProductsContext"
+import Spinner from "./components/spinner/spinner.component"
+import ErrorBoundary from "./components/error-boundary/error-boundary.component"
+
+const Homepage = lazy(() => import("./pages/homepage/homepage.component"));
+const SubDepartment = lazy(() => import("./pages/sub-department/sub-department.component"));
+const CheckoutPage = lazy(() => import("./pages/checkout/checkout.component"));
+const LoginAndSignupPage = lazy(() => import("./pages/login-and-signup/login-and-signup.component"));
 
 function App() {
-  const [loading ,setLoading] = useState(true);
-    const { dispatchProducts } = useContext(ShopProductsContext);
-    const HomepageSpinner = WithSpinner(Homepage);
 
-    useEffect(() => {
-        const  collectionRef = firestore.collection("shopProducts").orderBy("id");
-        collectionRef.onSnapshot(async snapshot => {
-            const shopProductsMap = await convertShopProductsSnapshotToMap(snapshot);
-            updateShopProducts(dispatchProducts, shopProductsMap);
-            setLoading(false);
-        })
-    },[dispatchProducts])
- 
   return (
     <div className="App mb-5">
       <Header/>
-      <Switch>
-        <Route exact path="/" render={(props) => <HomepageSpinner isLoading={loading} {...props} /> } />
-        <Route exact path="/checkout" component={CheckoutPage} />
-        <Route exact path="/loginorsignup" component={LoginAndSignupPage} />
-        <Route path={`/:particularDepartment`} component={SubDepartment} />
-      </Switch>
       
+      <ErrorBoundary>
+        <Suspense fallback={<Spinner/>}>
+          <Switch>
+            <Route exact path="/"  component={Homepage} />
+            <Route exact path="/loginorsignup" component={LoginAndSignupPage } />
+            <Route exact path="/checkout" component={CheckoutPage} />
+            <Route path={`/:particularDepartment`} component={SubDepartment} />
+          </Switch>
+        </Suspense>
+      </ErrorBoundary>
     </div>
   );
 }

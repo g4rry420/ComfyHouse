@@ -31,3 +31,15 @@ width: 23%;
 .test-warning {
     font-size: 24px;
 }
+
+@media only screen and (max-width: 700px){
+    .checkout-page{
+        width: 90%;
+    }
+    .checkout-header .header-block{
+        width: 22%;
+    }
+    .checkout-header .header-block:last-child{
+        width: 12%;
+    }
+}

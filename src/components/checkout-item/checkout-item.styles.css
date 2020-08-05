@@ -49,3 +49,15 @@
     padding-left: 12px;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 700px){
+    .checkout-item{
+        font-size: 18px;
+    }
+    .checkout-item-title,
+    .checkout-item-quantity,
+    .checkout-item-price {
+        width: 22%;
+    }
+    
+}

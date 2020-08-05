@@ -6,7 +6,7 @@ import CategoryLinks from '../category-links/category-links.component'
 import { ShopProductsContext } from "../../context/shopProducts/shopProductsContext"
 
 function CategoryHeader({ state }) {
-    const { objectsToArray,sortFunction } = useContext(ShopProductsContext);
+    const { objectsToArray, sortFunction } = useContext(ShopProductsContext);
     return (
         <div className="container-fluid background-for-category py-4">
             <div className="container">
@@ -15,11 +15,11 @@ function CategoryHeader({ state }) {
                     <h2 className="display-5 font-weight-bold">{state !== undefined ?  state.title : null}</h2>
                         <div className="row">
                             {
-                                state !== undefined ?
+                                state.items !== undefined ?
                                 objectsToArray(state.items).sort(sortFunction()).map(item => (
                                         <CategoryLinks key={item.id} item={item} /> 
                                     )) :
-                                        null
+                                    null
                             }
                         </div>
                     </div>

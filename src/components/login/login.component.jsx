@@ -34,15 +34,16 @@ export default function LogIn({ state }) {
         setLogin({...login, [name]: value});
     }
 
+    const { email, password } = login;
+
     if(state.previousPath === "/checkout" && currentUser){
         return <Redirect to="/checkout" />
-    }else if(state.previousPath === "/" && currentUser) {
-        return <Redirect to="/" />
-    }else if(currentUser) {
+    }else if(currentUser){
         return <Redirect to="/" />
     }
 
-    const { email, password } = login;
+
+
     return (
         <div>
             <div className="heading-container-in-login">
@@ -52,7 +53,7 @@ export default function LogIn({ state }) {
             <form className="mt-5" onSubmit={handleSubmit}>
                 <FormInput name="email" handleChange={handleChange} value={email} type="email" placeholder="Email" />
                 <FormInput name="password" handleChange={handleChange} value={password} type="password" placeholder="Password" />
-                <div className="text-center d-flex justify-content-around">
+                <div className="text-center d-md-flex justify-content-around both-buttons-container">
                     <div onClick={signInWithGoogle} className="google-login">
                         <CustomButton  type="button" title="Sign In With Google" button="login-button" />
                     </div>

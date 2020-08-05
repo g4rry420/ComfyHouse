@@ -12,7 +12,7 @@ let countForArrow = 0;
 
 const imageVariant = {
     exit:{ x: "-100vw", opacity: 0},
-    secondExit:{ x: "100vw", opacity: 0}
+    secondExit:{ x: "10vw", opacity: 0}
 }
 
 export default function IndividualItem({ location: {state} }) {
@@ -100,11 +100,11 @@ export default function IndividualItem({ location: {state} }) {
                             <AnimatePresence >
                                 { largeImage.map((img, i) => (
                                             <motion.img
+                                                layout="position"
                                                 variants={imageVariant}
                                                 animate={{ x: 0,  opacity: 1}}
                                                 exit={imageAnime ? "exit" : "secondExit"}
                                                 transition={{ duration: 0.5 }}
-                                                layout="position"
                                             ref={el => largeImageRef.current[i] = el} key={img.id} id={img.id} src={img.largeImage} alt="large product"/>
                                         ))}
                             </AnimatePresence>

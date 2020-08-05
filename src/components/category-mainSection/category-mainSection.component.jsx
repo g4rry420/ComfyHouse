@@ -14,13 +14,13 @@ function CategoryMainSection({ state }) {
                     <div className="col-md-2">
                         <div className="row">
                         {
-                            state !== undefined ?
+                            state.items !== undefined ?
                                 objectsToArray(state.items).sort(sortFunction()).map((item) => {
                                     return(
                                         <MainSectionSideHeading key={item.id} item={item} /> 
                                     )
                                 }) : 
-                                     null
+                                    null
                         }
 
                         </div>  
@@ -28,13 +28,13 @@ function CategoryMainSection({ state }) {
                     <div className="col-md-10">
                         <div className="row">
                         {
-                            state !== undefined ?
+                            state.items !== undefined ?
                                 objectsToArray(state.items).sort(sortFunction()).map(item => {
                                 return objectsToArray(item.items).sort(sortFunction()).filter((item, idx) => idx < 6 ).map(ite => (
                                     
                                     <MainSectionItems key={ite.id} item={ite} />
                                 ))}) :
-                                        null
+                                null
                         } 
                         </div>
                     </div>

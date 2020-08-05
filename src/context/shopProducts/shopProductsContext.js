@@ -8,6 +8,7 @@ import { auth, createUserProfileDocument } from "../../firebase/firebase.utils"
 export const ShopProductsContext = createContext();
 
 const ShopProductsContextProvider = (props) => {
+
     const objectsToArray = (dataForObjects) => {
         return Object.keys(dataForObjects).map(key => dataForObjects[key])
     };
@@ -36,7 +37,7 @@ const ShopProductsContextProvider = (props) => {
     }, [cart])
 
     useEffect(() => {
-        auth.onAuthStateChanged(async userAuth => {
+        const unsubcribe = auth.onAuthStateChanged(async userAuth => {
             if(userAuth) {
                 const userRef = await createUserProfileDocument(userAuth);
  
@@ -49,12 +50,18 @@ const ShopProductsContextProvider = (props) => {
             }
             setCurrentUser(userAuth);
          })
+
+         return () => {
+             unsubcribe();
+         }
+
     },[])
 
 
     return (
         <ShopProductsContext.Provider 
-            value={{products,currentUser, objectsToArray,sortFunction, dispatchProducts, dispatchCart, cartHidden, setCartHidden, cart}}>
+            value={{products,currentUser, objectsToArray,sortFunction,
+                     dispatchProducts, dispatchCart, cartHidden, setCartHidden, cart}}>
             {props.children}
         </ShopProductsContext.Provider>
     )
