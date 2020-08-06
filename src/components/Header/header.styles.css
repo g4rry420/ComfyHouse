@@ -161,4 +161,14 @@
     .links {
         justify-content: flex-end !important;
     }
+    .sign-out{
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    }
 }
