@@ -142,15 +142,9 @@
 }
 /* Burger navbar ends here */
 .sign-out{
-    width: 100%;
-    height: 100%;
-    color: white;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: var(--ease_in_out);
-    margin-bottom: 28px;
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
 }
 .sign-out:hover{
     color: var(--primaryColor);
