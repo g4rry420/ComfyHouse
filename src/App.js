@@ -1,7 +1,6 @@
 import React,{ lazy, Suspense } from 'react';
 import { Route, Switch } from "react-router-dom";
 
-import './App.css';
 import Header from './components/Header/header.component'
 import Spinner from "./components/spinner/spinner.component"
 import ErrorBoundary from "./components/error-boundary/error-boundary.component"

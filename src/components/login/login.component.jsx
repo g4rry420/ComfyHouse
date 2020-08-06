@@ -39,7 +39,7 @@ export default function LogIn({ state }) {
     if(state.previousPath === "/checkout" && currentUser){
         return <Redirect to="/checkout" />
     }else if(currentUser){
-        return <Redirect to="/" />
+        return <Redirect to={state.previousPath} />
     }
 
 

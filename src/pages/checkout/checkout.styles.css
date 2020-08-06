@@ -34,7 +34,7 @@ width: 23%;
 
 @media only screen and (max-width: 700px){
     .checkout-page{
-        width: 90%;
+        width: 100%;
     }
     .checkout-header .header-block{
         width: 22%;

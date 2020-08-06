@@ -5,7 +5,6 @@ import LogIn from '../../components/login/login.component'
 import SignUp from '../../components/signup/signup.component'
 
 export default function LoginAndSignupPage({ location: { state } }) {
-    console.log(state)
     return (
         <div className="container mt-5">
             <div className="row">

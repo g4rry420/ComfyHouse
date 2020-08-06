@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect} from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { v4 as uuidv4 } from "uuid"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -15,7 +15,7 @@ const imageVariant = {
     secondExit:{ x: "10vw", opacity: 0}
 }
 
-export default function IndividualItem({ location: {state} }) {
+export default function IndividualItem({ state }) {
     
     const [largeImage, setLargeImage] = useState([{
         id: state.item[0].id,
