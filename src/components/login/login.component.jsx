@@ -36,12 +36,15 @@ export default function LogIn({ state }) {
 
     const { email, password } = login;
 
-    if(state.previousPath === "/checkout" && currentUser){
-        return <Redirect to="/checkout" />
-    }else if(currentUser){
-        return <Redirect to={state.previousPath} />
-    }else{
-        if(currentUser) return <Redirect to="/" />
+
+    if(state !== undefined){
+        if(state.previousPath === "/checkout" && currentUser){
+            return <Redirect to="/checkout" />
+        }else if(currentUser){
+            return <Redirect to={state.previousPath} />
+        }else{
+            if(currentUser) return <Redirect to="/" />
+        }
     }
 
 

@@ -23,7 +23,7 @@ export default function IndividualItem({ state }) {
     }])
     const [imageAnime, setImageAnime] = useState(true);
 
-    const [smallImage, setSmallImage] = useState(state.item[0].smallImage);
+    const [smallImage] = useState(state.item[0].smallImage);
 
     const smallImageRef = useRef();
     const largeImageRef = useRef();
