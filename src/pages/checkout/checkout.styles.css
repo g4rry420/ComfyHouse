@@ -38,8 +38,15 @@ width: 23%;
     }
     .checkout-header .header-block{
         width: 22%;
+        font-size: 12px;
     }
     .checkout-header .header-block:last-child{
         width: 12%;
+    }
+    .test-warning{
+        font-size: 13px;
+    }
+    .total{
+        font-size: 26px;
     }
 }

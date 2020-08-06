@@ -16,7 +16,7 @@ function CheckoutPage({ location }) {
     return (
         <div className="checkout-page">
             <div className="checkout-header">
-                <div className="header-block">
+                <div className="header-block" id="product">
                     <span>Product</span>
                 </div>
                 <div className="header-block">
