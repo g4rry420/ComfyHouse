@@ -8,9 +8,10 @@ import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from "../cart-dropdown/cart-dropdown.component"
 import { ShopProductsContext } from "../../context/shopProducts/shopProductsContext"
 import { auth } from "../../firebase/firebase.utils.js"
+import { emptyCart } from "../../context/reducers/cart-reducer/cart-actions"
 
 function Header({ location }) {
-    const { cartHidden, currentUser } = useContext(ShopProductsContext);
+    const { cartHidden, currentUser,setCurrentUser, dispatchCart } = useContext(ShopProductsContext);
     const toggleNavbar = useRef();
     const navbar = (e) => {
         toggleNavbar.current.classList.toggle("sidebar-open")
@@ -34,7 +35,10 @@ function Header({ location }) {
                         <li className="list-menu"><NavLink exact to="/" className="icon-link icon-2">Homepage</NavLink></li>
                         {
                             currentUser ? 
-                            (<li onClick={() => auth.signOut() } className=" sign-out">SignOut</li>)
+                            (<li onClick={() => {
+                                auth.signOut()
+                                emptyCart(dispatchCart)
+                            } } className=" sign-out">SignOut</li>)
                             : 
                             (<li className="list-menu "><NavLink exact to={{ pathname: "/loginorsignup", state: { previousPath: location.pathname } }}  className="icon-link icon-2">SignUp</NavLink></li>)
                         }
@@ -48,7 +52,9 @@ function Header({ location }) {
             {
                 currentUser ? 
                 (<li onClick={() =>{
-                    auth.signOut()
+                    emptyCart(dispatchCart);
+                    auth.signOut();
+                    setCurrentUser(null);
                 }} className="list-menu-desktop sign-out">SignOut</li>)
                 : 
                 (<li className="list-menu-desktop"><NavLink exact to={{ pathname: "/loginorsignup", state: { previousPath: location.pathname } }} className="icon-link icon-2">SignUp</NavLink></li>)

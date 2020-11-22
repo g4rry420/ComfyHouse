@@ -1,3 +1,11 @@
+export const updateCart = (dispatchCart, items) => {
+    dispatchCart({
+        type: "UPDATE_CART",
+        items
+    })
+}
+
+
 export const toggleCartDropdown = (dispatchCart) => {
     dispatchCart({
         type: "TOGGLE_CART_DROPDOWN"
@@ -29,5 +37,11 @@ export const qtyDecrease = (dispatchCart, product) => {
     dispatchCart({
         type: "QTY_DECREASE",
         product
+    })
+}
+
+export const emptyCart = (dispatchCart) => {
+    dispatchCart({
+        type: "EMPTY_CART"
     })
 }

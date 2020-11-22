@@ -3,8 +3,10 @@ import logger from "use-reducer-logger"
 
 import { cartReducer } from "../reducers/cart-reducer/cart-reducer"
 import { productReducer } from "../reducers/products-reducer/products-reducer"
-import { auth, createUserProfileDocument,firestore,convertShopProductsSnapshotToMap  } from "../../firebase/firebase.utils"
-import { updateShopProducts } from "../reducers/products-reducer/products-actions" 
+import { auth, createUserProfileDocument, firestore, convertShopProductsSnapshotToMap, createCartDocuments  }
+     from "../../firebase/firebase.utils"
+import { updateShopProducts } from "../reducers/products-reducer/products-actions"
+import { updateCart } from "../reducers/cart-reducer/cart-actions"
 
 export const ShopProductsContext = createContext();
 
@@ -20,11 +22,9 @@ const ShopProductsContextProvider = (props) => {
         ,{ shopProducts: null });
 
     const [cart, dispatchCart] = useReducer(
-        process.env.NODE_ENV === "development" ? logger(cartReducer) : cartReducer
-        , [], () => {
-        const localData = localStorage.getItem("Cart_Products");
-        return localData ? JSON.parse(localData) : []
-    })
+        process.env.NODE_ENV === "development" ? logger(cartReducer) : cartReducer, []
+        )
+    
 
     useEffect(() => {
         const  collectionRef = firestore.collection("shopProducts").orderBy("id");
@@ -34,11 +34,7 @@ const ShopProductsContextProvider = (props) => {
             updateShopProducts(dispatchProducts, shopProductsMap);
             setLoading(false);
         })
-    }, [dispatchProducts])
-
-    useEffect(() => {
-        localStorage.setItem("Cart_Products", JSON.stringify(cart))
-    }, [cart])
+    }, [dispatchProducts]) 
 
     useEffect(() => {
         const unsubcribe = auth.onAuthStateChanged(async userAuth => {
@@ -61,6 +57,39 @@ const ShopProductsContextProvider = (props) => {
 
     },[])
 
+    useEffect(() => {
+        const unsubscribe = auth.onAuthStateChanged(async userStatus => {
+            if(userStatus){
+                if (cart.length){
+                    await createCartDocuments(userStatus, cart);
+                }
+            }
+        })
+
+        return () => {
+            unsubscribe();
+        }
+
+    }, [cart])
+
+    useEffect(() => {
+        const unsubscribe = auth.onAuthStateChanged(async userStatus => {
+            if(userStatus){
+                const cartRef = firestore.collection("cart").doc(`${userStatus.uid}`);
+                cartRef.get().then(async doc => {
+                    if(doc.exists){
+                        updateCart(dispatchCart ,objectsToArray(doc.data()))
+                    }
+                })
+            }
+        })
+
+        return () => {
+            unsubscribe();
+        }
+
+    }, [dispatchCart])
+
     const objectsToArray = (dataForObjects) => {
         return Object.keys(dataForObjects).map(key => dataForObjects[key])
     };
@@ -72,7 +101,7 @@ const ShopProductsContextProvider = (props) => {
 
     return (
         <ShopProductsContext.Provider 
-            value={{products,currentUser, loading, objectsToArray,sortFunction,
+            value={{products,currentUser,setCurrentUser, loading, objectsToArray,sortFunction,
                      dispatchProducts, dispatchCart, cartHidden, setCartHidden, cart}}>
             {props.children}
         </ShopProductsContext.Provider>

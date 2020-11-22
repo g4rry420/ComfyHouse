@@ -1,5 +1,15 @@
 export const cartReducer = (state, action) => {
+    console.log(action)
     switch(action.type) {
+        case "UPDATE_CART":
+            return [
+                ...state,
+                ...action.items
+            ]
+        
+        case "EMPTY_CART":
+            return []    
+            
         case "ADD_ITEM_TO_CART":
             if(!state.map(item => item.id).includes(action.product.id)){
                 return [...state,{
@@ -8,7 +18,6 @@ export const cartReducer = (state, action) => {
                     price: action.product.price,
                     id: action.product.id,
                     qty: 1,
-                    // item: action.product.item[0] 
                 }]
             }else{
                 return state.filter(item => {

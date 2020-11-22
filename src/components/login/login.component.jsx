@@ -64,6 +64,11 @@ export default function LogIn({ state }) {
                     </div>
                     <CustomButton title="Login" button="login-button" />
                 </div>
+                <div className="test-container text-center mt-5">
+                    <h4 className="display-4">Test Credentails</h4>
+                    <h5 className="display-4">Email: test@user.com</h5>
+                    <h5 className="display-4">Password: 1234567</h5>
+                </div>
             </form>
         </div>
     )
