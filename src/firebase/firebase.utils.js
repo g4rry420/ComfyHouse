@@ -51,11 +51,11 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
     return userRef;
 }
 
-const comparisonCheck = (firestoreCartItems, array2) => {
-    for (let index = 0; index < firestoreCartItems.length; index++) {
-        return firestoreCartItems[index].id === array2[index].id
-    }
-}
+// const comparisonCheck = (firestoreCartItems, array2) => {
+//     for (let index = 0; index < firestoreCartItems.length; index++) {
+//         return firestoreCartItems[index].id === array2[index].id
+//     }
+// }
 
 export const createCartDocuments = async (userStatus, frontEndCartItems) => {
     if(!userStatus) return;

@@ -7,7 +7,7 @@ import { ShopProductsContext } from "../../context/shopProducts/shopProductsCont
 import { addItemToCart } from "../../context/reducers/cart-reducer/cart-actions"
 
 export default function IndividualItemRightSide({ state }) {
-    const { cart, dispatchCart } = useContext(ShopProductsContext)
+    const { dispatchCart } = useContext(ShopProductsContext)
     return (
         <div className="individual-item-right-side-container">
             <Heading title="Car title" display="display-5"
