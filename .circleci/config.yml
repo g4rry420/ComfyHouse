@@ -25,3 +25,5 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run: npm run lint
+
+      - run: npm run size
