@@ -1,10 +1,57 @@
-orbs:
-  react: thefrontside/react@0.2.0
 version: 2.1
+jobs:
+  build:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/node:12-browsers
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package-lock.json" }}
+          - v1-dependencies-
+      - run:
+          name: Install dependencies
+          command: npm install
+      - save_cache:
+          key: v1-dependencies-{{ checksum "package-lock.json" }}
+          paths:
+            - node_modules
+      - run:
+          name: Build
+          command: |
+            if [ $CIRCLE_BRANCH = 'circleci' ]; then
+              npm run build
+            fi
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+  deploy:
+    working_directory: ~/repo
+    docker:
+      - image: innovatorjapan/awscli:latest
+    steps:
+      - attach_workspace:
+          at: .
+      - run:
+          name: Deploy
+          command: |
+            if [ $CIRCLE_BRANCH = 'circleci' ]; then
+              aws s3 sync build s3://comfy-house-circleci --delete --exact-timestamps;
+            fi
 workflows:
-  push:
+  build_and_deploy:
     jobs:
-      - react/install
-      - react/eslint:
+      - build:
+          filters:
+            branches:
+              only:
+                - circleci
+      - deploy:
           requires:
-            - react/install
+            - build
+          filters:
+            branches:
+              only:
+                - circleci
