@@ -1,9 +1,13 @@
 version: 2.1
+
+orbs:
+  windows: circleci/windows@2.4.0
+
 jobs:
   build:
     working_directory: ~/repo
-    docker:
-      - image: circleci/node:12-browsers
+    executor:
+      name: windows/default
     steps:
       - checkout
       - restore_cache:
@@ -27,31 +31,54 @@ jobs:
           root: .
           paths:
             - .
-  deploy:
+  build-deploy:
     working_directory: ~/repo
-    docker:
-      - image: innovatorjapan/awscli:latest
+    executor:
+      name: windows/default
     steps:
-      - attach_workspace:
-          at: .
+      - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "88:fd:6a:c9:68:18:ff:7e:5b:41:29:c4:5d:32:94:b4"
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package-lock.json" }}
+          - v1-dependencies-
       - run:
-          name: Deploy
+          name: Install dependencies
+          command: npm install
+      - save_cache:
+          key: v1-dependencies-{{ checksum "package-lock.json" }}
+          paths:
+            - node_modules
+      - run:
+          name: Build
           command: |
             if [ $CIRCLE_BRANCH = 'circleci' ]; then
-              aws s3 sync build s3://comfy-house-circleci --delete --exact-timestamps;
+              npm run build
             fi
+      - run:
+          name: Update Host
+          command: .\.circleci\Set_Known_Hosts.ps1
+      - run:
+          name: Deploy App into EC2
+          shell: bash.exe
+          command: ./.circleci/GIT_Bash_Setup.sh
+
 workflows:
+  version: 2
   build_and_deploy:
     jobs:
-      - build:
+      - build-deploy:
           filters:
             branches:
               only:
                 - circleci
-      - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only:
-                - circleci
+
+   build:
+      jobs:
+         - build:
+              filters:
+                 branches:
+                    ignore:
+                       - circleci
