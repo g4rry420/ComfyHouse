@@ -10,7 +10,9 @@
 
 cd /
 echo "================== Started Deployment using  GIT BASH ======================"
-C/"Program Files"/Git/bin/bash.exe ./.circleci/SSH_Deploy.sh
+echo "$HOME"
+echo "cd $HOME && ls"
+C/"Program Files"/Git/bin/bash.exe $HOME/project/.circleci/SSH_Deploy.sh
 
 echo "================== End Deployment using  GIT BASH ======================"
 
