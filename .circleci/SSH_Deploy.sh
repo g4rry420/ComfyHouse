@@ -29,6 +29,7 @@ if [ $? != 0 ]
 then
     echo $?
     echo " ERROR :: DefaultAppPool Stop Error "
+    set -o pipefail
     exit 1
 fi
 
@@ -40,6 +41,7 @@ if [ $? != 0 ]
 then
     echo $?
     echo " ERROR :: deployment build files"
+    set -o pipefail
     exit 1
 fi
 echo "================== END  deployment build files to remote server  ======================"
@@ -50,6 +52,7 @@ if [ $? != 0 ]
 then
     echo $?
     echo " ERROR :: DefaultAppPool Stop Error "
+    set -o pipefail
     exit 1
 fi
 
