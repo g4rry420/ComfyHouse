@@ -20,7 +20,7 @@ eval `ssh-agent -s`
 echo "================== END  SSH AGENT within GIT BASH  ======================"
 
 echo "================== Started  SSH AGENT Private Key  ======================"
-ssh-add $HOME/.ssh/$AWS_PRIVATE_KEY_NAME
+ssh-add C/Users/.ssh/$AWS_PRIVATE_KEY_NAME
 echo "================== END  SSH AGENT Private Key  ======================"
 
 echo "================== Started  App pool  stop  ======================"
@@ -29,7 +29,6 @@ if [ $? != 0 ]
 then
     echo $?
     echo " ERROR :: DefaultAppPool Stop Error "
-    set -o pipefail
     exit 1
 fi
 
@@ -41,7 +40,6 @@ if [ $? != 0 ]
 then
     echo $?
     echo " ERROR :: deployment build files"
-    set -o pipefail
     exit 1
 fi
 echo "================== END  deployment build files to remote server  ======================"
@@ -52,7 +50,6 @@ if [ $? != 0 ]
 then
     echo $?
     echo " ERROR :: DefaultAppPool Stop Error "
-    set -o pipefail
     exit 1
 fi
 
