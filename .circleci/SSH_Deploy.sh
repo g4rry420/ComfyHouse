@@ -20,7 +20,7 @@ eval `ssh-agent -s`
 echo "================== END  SSH AGENT within GIT BASH  ======================"
 
 echo "================== Started  SSH AGENT Private Key  ======================"
-ssh-add C/Users/.ssh/$AWS_PRIVATE_KEY_NAME
+ssh-add $HOME/.ssh/$AWS_PRIVATE_KEY_NAME
 echo "================== END  SSH AGENT Private Key  ======================"
 
 echo "================== Started  App pool  stop  ======================"
