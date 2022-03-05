@@ -75,10 +75,10 @@ workflows:
               only:
                 - circleci
 
-   build:
-      jobs:
-         - build:
-              filters:
-                 branches:
-                    ignore:
-                       - circleci
+  build:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - circleci
