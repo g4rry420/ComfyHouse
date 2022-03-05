@@ -35,7 +35,7 @@ fi
 echo "================== END  App pool  stop  ======================"
 
 echo "================== Started  deployment build files to remote server  ======================"
-scp -r ${outputPath}/Demo/* $AWS_SERVER_USER@$AWS_SERVER_HOSTNAME:C:/core
+scp -r ${outputPath}/* $AWS_SERVER_USER@$AWS_SERVER_HOSTNAME:C:/inetpub/wwwroot
 if [ $? != 0 ]
 then
     echo $?
