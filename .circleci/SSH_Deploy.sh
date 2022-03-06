@@ -24,13 +24,8 @@ ssh-add $HOME/.ssh/$AWS_PRIVATE_KEY_NAME
 echo "================== END  SSH AGENT Private Key  ======================"
 
 echo "================== Started  App pool  stop  ======================"
-eval `SSH $AWS_SERVER_USER@$AWS_SERVER_HOSTNAME "Stop-WebAppPool -Name DefaultAppPool"`
-expect  {
-        timeout      { send_user "timeout while connecting to $HOST\n"; exit }
-        "*No route to host*" { send_user "$HOST not reachable\n"; exit }
-        "*assword: " { send -s $$AWS_EC2_PASSWORD\r }
-        }
-interact
+SSH $AWS_SERVER_USER@$AWS_SERVER_HOSTNAME "Stop-WebAppPool -Name DefaultAppPool"
+send $AWS_EC2_PASSWORD
 if [ $? != 0 ]
 then
     echo $?
