@@ -25,7 +25,8 @@ echo "================== END  SSH AGENT Private Key  ======================"
 
 echo "================== Started  App pool  stop  ======================"
 SSH $AWS_SERVER_USER@$AWS_SERVER_HOSTNAME "Stop-WebAppPool -Name DefaultAppPool"
-echo $AWS_EC2_PASSWORD
+expect "password"
+send $AWS_EC2_PASSWORD
 if [ $? != 0 ]
 then
     echo $?
