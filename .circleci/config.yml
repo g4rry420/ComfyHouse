@@ -52,6 +52,9 @@ jobs:
           name: Build
           command: npm run build
       - run:
+          name: Install Transfertto
+          command: .\.circleci\install_transfertto.ps1
+      - run:
           name: Update Host
           command: .\.circleci\Set_Known_Hosts.ps1
       - run:
