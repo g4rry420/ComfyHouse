@@ -5,5 +5,5 @@ if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
   Break
 }
 
-Install-Module -Name Transferetto -AllowClobber -Force
-Get-Module -List Transferetto
+Install-Module -Name Posh-SSH
+Get-Module -List Posh-SSH

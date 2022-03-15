@@ -52,15 +52,14 @@ jobs:
           name: Build
           command: npm run build
       - run:
-          name: Install Transfertto
-          command: .\.circleci\install_transfertto.ps1
+          name: Install POSH-SSH
+          command: .\.circleci\install_posh_ssh.ps1
       - run:
           name: Update Host
-          command: .\.circleci\Set_Known_Hosts.ps1
+          command: .\.circleci\set_known_hosts.ps1
       - run:
           name: Deploy App into EC2
-          shell: bash.exe
-          command: ./.circleci/GIT_Bash_Setup.sh
+          command: .\.circleci\ssh_deploy.ps1
 
 workflows:
   version: 2
