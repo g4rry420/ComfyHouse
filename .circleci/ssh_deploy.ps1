@@ -3,6 +3,7 @@ $password = ConvertTo-SecureString $env:AWS_EC2_PASSWORD -AsPlainText -Force
 $creds = New-Object System.Management.Automation.PSCredential ($env:AWS_SERVER_USER, $password)
 
 #Establishing an SFTP session
+Write-Host $(env:$AWS_PRIVATE_KEY_NAME)
 $Session = New-SFTPSession -ComputerName $env:AWS_SERVER_HOSTNAME -Credential $creds -KeyFile "~/.ssh/$(${env:$AWS_PRIVATE_KEY_NAME})"
 
 $path = Split-Path -parent $PSScriptRoot
