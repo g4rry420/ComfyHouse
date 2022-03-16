@@ -1,3 +1,4 @@
+$ErrorActionPreference = "Stop"
 Write-Output " ====================  Started Setup Known host on our remote server   ======================"
   
 $inputText = ssh-keyscan $env:AWS_SERVER_HOSTNAME

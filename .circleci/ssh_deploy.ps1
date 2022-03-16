@@ -1,3 +1,4 @@
+$ErrorActionPreference = "Stop"
 $password = ConvertTo-SecureString $env:AWS_EC2_PASSWORD -AsPlainText -Force
 $creds = New-Object System.Management.Automation.PSCredential ($env:AWS_SERVER_USER, $password)
 
