@@ -4,7 +4,7 @@ $creds = New-Object System.Management.Automation.PSCredential ($env:AWS_SERVER_U
 
 #Establishing an SFTP session
 Write-Host ${env:$AWS_PRIVATE_KEY_NAME}
-$Session = New-SFTPSession -ComputerName $env:AWS_SERVER_HOSTNAME -Credential $creds -KeyFile "~/.ssh/$(${env:$AWS_PRIVATE_KEY_NAME})"
+$Session = New-SFTPSession -ComputerName $env:AWS_SERVER_HOSTNAME -Credential $creds -KeyFile "~/.ssh/id_rsa"
 
 $path = Split-Path -parent $PSScriptRoot
 
