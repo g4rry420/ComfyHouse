@@ -6,5 +6,5 @@ if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
   Break
 }
 
-Install-Module -Name Posh-SSH
+Install-Module -Name Posh-SSH -AllowClobber -Force
 Get-Module -List Posh-SSH
