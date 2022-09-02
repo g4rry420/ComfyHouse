@@ -30,4 +30,7 @@ Write-Host "Add IP to EC2 Inbound rule ----- START"
 aws.exe ec2 authorize-security-group-ingress --region $env:AWS_REGION_NAME --group-id $env:AWS_SECURITY_GROUP_ID --protocol tcp --port $env:AWS_PORT --cidr "$ipAddress/32"
 Write-Host "Add IP to EC2 Inbound rule ----- END"
 
-aws.exe ec2 describe-security-groups --group-id $env:AWS_SECURITY_GROUP_ID
+Write-Host "Check SSH Folder ----- START"
+$path = Split-Path -parent $HOME
+Get-ChildItem -LiteralPath "$($path)\circleci\.ssh"
+Write-Host "Check SSH Folder ----- END"
