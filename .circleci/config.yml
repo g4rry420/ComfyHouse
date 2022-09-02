@@ -34,9 +34,9 @@ jobs:
       name: windows/default
     steps:
       - checkout
-      # - add_ssh_keys:
-      #     fingerprints:
-      #       - "88:fd:6a:c9:68:18:ff:7e:5b:41:29:c4:5d:32:94:b4"
+      - add_ssh_keys:
+          fingerprints:
+            - "d6:f7:45:72:3c:da:b0:df:55:58:d3:00:05:57:93:f1"
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package-lock.json" }}
