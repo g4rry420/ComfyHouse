@@ -34,9 +34,9 @@ jobs:
       name: windows/default
     steps:
       - checkout
-      - add_ssh_keys:
-          fingerprints:
-            - "88:fd:6a:c9:68:18:ff:7e:5b:41:29:c4:5d:32:94:b4"
+      # - add_ssh_keys:
+      #     fingerprints:
+      #       - "88:fd:6a:c9:68:18:ff:7e:5b:41:29:c4:5d:32:94:b4"
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package-lock.json" }}
@@ -52,6 +52,9 @@ jobs:
           name: Build
           command: npm run build
       - run:
+          name: Check IP Address current Circleci Instance
+          command: .\.circleci\ipAddress.ps1
+      - run:
           name: Install POSH-SSH
           command: .\.circleci\install_posh_ssh.ps1
       - run:
@@ -60,6 +63,10 @@ jobs:
       - run:
           name: Deploy App into EC2
           command: .\.circleci\ssh_deploy.ps1
+      - run:
+          name: Remove Ip from EC2 and Delete Aws Credentials 
+          command: .\.circleci\removeIpAddress.ps1
+          when: always
 
 workflows:
   version: 2
