@@ -35,7 +35,7 @@ aws.exe configure list
 Write-Host "Check AWS Credentials ----- END"
 
 Write-Host "Add IP to EC2 Inbound rule ----- START"
-aws.exe ec2 authorize-security-group-ingress --region $env:AWS_REGION_NAME --group-id $env:AWS_SECURITY_GROUP_ID --protocol tcp --port $env:AWS_PORT --cidr "$ipAddress/32"
+aws.exe ec2 authorize-security-group-ingress --region $env:AWS_REGION_NAME --group-id $env:AWS_SECURITY_GROUP_ID --protocol tcp --port $env:AWS_PORT --cidr "$PUBLIC_IP/32"
 Write-Host "Add IP to EC2 Inbound rule ----- END"
 
 Write-Host "Check SSH Folder ----- START"
