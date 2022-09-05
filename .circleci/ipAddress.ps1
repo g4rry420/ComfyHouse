@@ -3,7 +3,7 @@
 Write-Host "Check IP Config"
 ipconfig.exe
 
-Write-Host "Ip Address"
+Write-Host "Get Ip Address ----- START"
 $ipAddress = (
   Get-NetIPConfiguration |
   Where-Object {
@@ -11,6 +11,14 @@ $ipAddress = (
     $_.NetAdapter.Status -ne "Disconnected"
   }
 ).IPv4Address.IPAddress
+Write-Host $ipAddress
+Write-Host "Get Ip Address ----- END"
+
+Write-Host "Get Ip Address2 ----- START"
+$PUBLIC_IP=$(curl ipinfo.io/ip)
+Write-Host $PUBLIC_IP
+Write-Host "Get Ip Address2 ----- END"
+
 
 Write-Host "Check AWS Credentials ----- START"
 aws.exe configure list
