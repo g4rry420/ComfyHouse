@@ -42,6 +42,9 @@ jobs:
           - v1-dependencies-{{ checksum "package-lock.json" }}
           - v1-dependencies-
       - run:
+          name: Check IP Address current Circleci Instance
+          command: .\.circleci\ipAddress.ps1
+      - run:
           name: Install dependencies
           command: npm install
       - save_cache:
@@ -51,9 +54,6 @@ jobs:
       - run:
           name: Build
           command: npm run build
-      - run:
-          name: Check IP Address current Circleci Instance
-          command: .\.circleci\ipAddress.ps1
       - run:
           name: Install POSH-SSH
           command: .\.circleci\install_posh_ssh.ps1
